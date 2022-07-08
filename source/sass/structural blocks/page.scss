@@ -1,9 +1,12 @@
 .page {}
 
-.page__body {}
+.page__body {
+  margin: 0;
+}
 
 
 .test {
   width: 200px;
   height: 50px;
-  background-color: red;}
+  background-color: red;
+}
