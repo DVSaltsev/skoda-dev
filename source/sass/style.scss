@@ -1,11 +1,9 @@
 // Начните писать стили здесь
 // Global blocks
-// @import "structural blocks/fonts.scss";
-// @import "structural blocks/variables.scss";
-// @import "structural blocks/templates.scss";
+@import "global blocks/fonts.scss";
+@import "global blocks/variables.scss";
+@import "global blocks/visually-hidden.scss";
+// @import "global blocks/templates.scss";
 
 // Structural blocks
-//@import "structural blocks/page.scss";
-@import "blocks/global.scss";
-// @import "structural blocks/visually-hidden.scss";
 @import "blocks/page.scss";
