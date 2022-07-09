@@ -1,9 +1,21 @@
-.page {}
+.page {
+
+  font-family: $name-font, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #000000;
+}
 
 .page__body {
   margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100vh;
+  background-color: #ffffff;
 }
-
 
 .test {
   width: 200px;
