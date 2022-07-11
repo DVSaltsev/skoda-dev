@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "SKODANext";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/SKODANext-Regular.woff2") format("woff2"), url("../fonts/SKODANext-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "SKODANext";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/SKODANext-Bold.woff2") format("woff2"), url("../fonts/SKODANext-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "SKODANext";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/SKODANext-Light.woff2") format("woff2"), url("../fonts/SKODANext-Light.woff") format("woff"); }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.container {
+  min-width: 375px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px; }
+
+@media (min-width: 828px) {
+  .container {
+    padding: 0px 30px; } }
+
+@media (min-width: 1124px) {
+  .container {
+    padding: 0px 50px; } }
+
+@media (min-width: 1380px) {
+  .container {
+    padding: 0px 0px;
+    max-width: 1280px; } }
+
+.button {
+  display: inline-flex;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 5px 10px;
+  width: 194px;
+  height: 52px;
+  background: #4DA82F;
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 140%;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  cursor: pointer; }
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.contacts__logo {
+  display: flex;
+  text-decoration: none;
+  width: 110px;
+  justify-content: center;
+  align-items: center; }
+
+.contacts__logo-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contein;
+     object-fit: contein; }
+
+.contacts__address {
+  line-height: 140%;
+  font-weight: 300;
+  max-width: 166px;
+  display: none;
+  margin: 0; }
+
+.contacts__address::before {
+  content: "";
+  width: 14px;
+  height: 16px;
+  display: block;
+  background-image: url(../img/icons/mark-address.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-right: 10px; }
+
+.contacts__regime {
+  line-height: 140%;
+  font-weight: 300;
+  max-width: 160px;
+  display: none;
+  margin: 0; }
+
+.contacts__regime::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: block;
+  background-image: url(../img/icons/mark-regime.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-right: 10px; }
+
+.contacts__phone {
+  font-size: 14px;
+  line-height: 140%;
+  margin-left: 40px;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer; }
+
+.contacts__button {
+  width: 40px;
+  height: 40px; }
+
+.contacts__button::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-image: url(../img/icons/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.contacts__text-button {
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  display: none; }
+
+@media (min-width: 828px) {
+  .contacts__address {
+    display: flex; }
+  .contacts__regime {
+    display: flex; }
+  .contacts__phone {
+    margin-left: 0px; }
+  .contacts__button {
+    width: 150px;
+    min-height: 44px; }
+  .contacts__button::before {
+    display: none; }
+  .contacts__text-button {
+    display: inline; } }
+
+@media (min-width: 1124px) {
+  .container {
+    padding: 0px 50px; }
+  .contacts__phone {
+    font-size: 24px; } }
+
+@media (min-width: 1380px) {
+  .container {
+    padding: 0px 0px;
+    max-width: 1280px; } }
+
+.text-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: uppercase; }
+
+.page {
+  font-family: "SKODANext", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #000000; }
+
+.page__body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100vh;
+  background-color: #ffffff; }
+
+.test {
+  width: 200px;
+  height: 50px;
+  background-color: red; }
+
+.header {
+  min-height: 74px; }
+
+.header__container {
+  height: 100%; }
+
+@media (min-width: 1124px) {
+  .header {
+    min-height: 80px; } }
+
+.available {
+  min-height: 240px;
+  position: relative; }
+
+.available__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block; }
+
+.available__info {
+  position: absolute;
+  width: 306px;
+  min-height: 90px;
+  left: 5%;
+  top: 7%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  padding: 16px; }
+
+.available__h2 {
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF; }
+
+.available__button {
+  width: 157px;
+  height: 28px;
+  background: #4DA82F;
+  border-radius: 64px;
+  padding: 8px 16px;
+  font-size: 10px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+.available__text {
+  display: none; }
+
+.footer {
+  display: none; }

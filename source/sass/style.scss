@@ -4,16 +4,18 @@
 @import "common blocks/variables.scss";
 @import "common blocks/visually-hidden.scss";
 @import "common blocks/container.scss";
+@import "common blocks/button.scss";
+@import "common blocks/contacts.scss";
+@import "common blocks/text-title.scss";
+@import "common blocks/form.scss";
+
 
 // @import "global blocks/templates.scss";
 
 // Structural blocks
 @import "structural blocks/page.scss";
-@import "structural blocks/address.scss";
-@import "structural blocks/regime.scss";
-@import "structural blocks/phone.scss";
-@import "structural blocks/button.scss";
 @import "structural blocks/header.scss";
 @import "structural blocks/main.scss";
+@import "structural blocks/avialable.scss";
+
 @import "structural blocks/footer.scss";
-@import "structural blocks/logo.scss";

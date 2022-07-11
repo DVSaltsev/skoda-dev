@@ -1,0 +1,48 @@
+.available {
+  min-height: 240px;
+  position: relative;
+}
+
+.available__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.available__info {
+  position: absolute;
+  width: 306px;
+  min-height: 90px;
+  left: 5%;
+  top: 7%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.available__h2 {
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.text-title {}
+
+.available__button {
+  width: 157px;
+  height: 28px;
+  background: #4DA82F;
+  border-radius: 64px;
+  padding: 8px 16px;
+  font-size: 10px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.button {}
+
+.available__text {
+  display: none;
+}

@@ -19,31 +19,43 @@
 <body class="page__body">
   <!-- Хедер -->
   <header class="header">
-    <div class="header__container container">
-      <a href="" class="header__logo logo">
-        <img src="img/logo/logo.png" alt="Логотип компании Шкода" class="logo__img" width="109" height="34h">
+    <div class="header__container container contacts">
+      <a href="#" class="contacts__logo">
+
+        <picture>
+          <source media="(min-width: ($min-width-tablet+60px))" srcset="img/contacts/logo.png">
+          <img src="img/contacts/logo-mobile.png" alt="Логотип компании Шкода" class="contacts__logo-img" width="109"
+            height="34">
+        </picture>
+
       </a>
-      <p class="header__address address">г. Москва ул.Тверская-Ямская, д. 123</p>
-      <p class="header__regime regime">Ежедневно с 9:00 до
-        21:00</p>
-      <span class="header__phone phone">8(800)000-00-00</span>
-      <a href="#" class="button header__button "><span class="header__text-button">Обратный звонок</span></a>
+      <p class="contacts__address">г. Москва ул.Тверская-Ямская, д. 123</p>
+      <p class="contacts__regime">Ежедневно с 9:00 до 21:00</p>
+      <a href="tel: +78000000000" class="contacts__phone">8(800)000-00-00</a>
+      <a href="#" class="contacts__button button"><span class="contacts__text-button">Обратный звонок</span></a>
     </div>
+
   </header>
 
   <main class="main">
     <h1 class="main__h1 visually-hidden">Предлагаемые автосалоном Шкода товары и услуги</h1>
     <!-- Авто в наличие -->
     <section class="available">
-      <img src="img/available/fon.jpg" alt="Группа автомобилей Шкода на льду" class="available__img">
+      <picture>
+        <source type="image/webp" media="(min-width:($min-width-tablet+60px))" srcset="img/available/fon.webp 1x">
+        <source type="image/webp" srcset="img//available/fon-mobile.webp 1x">
+        <source media="(min-width:($min-width-tablet+60px))" srcset="img/available/fon.jpg">
+        <img src="img/available/fon-mobile.jpg" alt="Группа автомобилей Шкода на льду" class="available__img">
+      </picture>
+
       <div class="available__info">
-        <h2 class="available__h2 text-title">Автомобили Шкода в наличие</h2>
+        <h2 class="available__h2 text-title">Автомобили Шкода в наличии</h2>
         <a href="" class="available__button button">Поставка: январь 2022</a>
         <p class="available__text">Выдача автомобилей день в день</p>
       </div>
     </section>
     <!--  Допуслуги -->
-    <section class="servis-add">
+    <!-- <section class="servis-add">
       <h2 class="servis-add__h2 visually-hidden">Дополнительные услуги.</h2>
       <ul class="servis-add__list container">
         <li class="servis-add__item">
@@ -66,27 +78,27 @@
           <a href="#" class="servis-add__link">Оставить заявку</a>
         </li>
       </ul>
-    </section>
+    </section> -->
     <!-- Шок-цена -->
-    <section class="shoсk">
+    <!-- <section class="shoсk">
       <div class="shoсk__container container">
         <img src="img/shock/fon.jpg" alt="Группа автомобилей Шкода в ангаре" class="shock__img">
         <div class="shock__wrapper">
           <h2 class="shock__h2">Шок цена</h2>
           <p class="shock__text">Успей зафиксировать условия</p>
-          <div class="shoсk__timer timer">
-            <div class="timer__items">
-              <div class="timer__item timer__days">00</div>
-              <div class="timer__item timer__hours">00</div>
-              <div class="timer__item timer__minutes">00</div>
-              <div class="timer__item timer__seconds">00</div>
+          <div class="shoсk__timer">
+            <div class="shock__items">
+              <div class="shock__item shock__days">00</div>
+              <div class="shock__item shock__hours">00</div>
+              <div class="shock__item shock__minutes">00</div>
+              <div class="shock__item shock__seconds">00</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Модели -->
-    <section class="models">
+    <!-- <section class="models">
       <h2 class="models-add-h2 text-title">Модельный ряд Шкода</h2>
       <div class="models-add__container container">
         <ul class="models__name-models">
@@ -230,9 +242,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- Комплектации -->
-    <section class="settings">
+    <!-- <section class="settings">
       <h2 class="settings-h2 text-title">Подберите комплектацию</h2>
       <div class="settings__container container">
         <div class="settings__choice">
@@ -290,9 +302,9 @@
 
         <a href="#" class="settings__button-more button">Еще комплектации</a>
       </div>
-    </section>
+    </section> -->
     <!-- Кредит -->
-    <section class="сredit">
+    <!-- <section class="сredit">
       <div class="сredit__container container">
         <img src="img/credit/credit-meet.jpg" alt="Клиент оформляет кредит" class="сredit__img">
         <h2 class="сredit-h2 text-title">Шкода в кредит по условиям 2022 года</h2>
@@ -303,59 +315,56 @@
         </ul>
 
         <form class="credit__form form" action="https://echo.htmlacademy.ru" method="get">
-          <input class="credit__input-name input-name" type="text" name="name" placeholder="ФИО">
-          <input class="credit__input-tel input-tel" type="tel" name="tel" placeholder="+7(___)___-__-__">
-          <button class="credit__button">Отправить заявку</button>
-          <input class="credit__chek-agree" type="checkbox" name="credit-agree" id="agree" checked>
-          <label class="credit__label-agree" for="credit-agree">Согласен с условиями обработки персональных
+          <input class="form__input-name" type="text" name="name" placeholder="ФИО">
+          <input class="form__input-tel" type="tel" name="tel" placeholder="+7(___)___-__-__">
+          <button class="form__button button">Отправить заявку</button>
+          <input class="form__chek-agree" type="checkbox" name="credit-agree" id="agree" checked>
+          <label class="form__label-agree" for="credit-agree">Согласен с условиями обработки персональных
             данных</label>
-          <p class="credits__notes">Подробные условия кредитования вы можете уточнить по телефону 8 (800) 000-00-00</p>
+          <p class="form__notes">Подробные условия кредитования вы можете уточнить по телефону 8 (800) 000-00-00</p>
         </form>
       </div>
-    </section>
+    </section> -->
 
     <!-- Трейд Ин -->
-    <section class="tradein">
+    <!-- <section class="tradein">
       <div class="tradein__container container">
-
         <h2 class="tradein-h2 text-title">Выгодный Trade in
           вместе со Škoda</h2>
         <p class="tradein__offer">Обменяй свой старый автомобиль
           на новую Škoda и получи скидку до 100 000 руб</p>
-
         <form class="tradein__form form" action="https://echo.htmlacademy.ru" method="get">
-          <input class="tradein__input-name input-name" type="text" name="name" placeholder="ФИО">
-          <input class="tradein__input-tel input-tel" type="tel" name="tel" placeholder="+7(___)___-__-__">
-          <button class="tradein__button">Отправить заявку</button>
-          <input class="tradein__chek-agree" type="checkbox" name="agree" id="tradein-agree" checked>
-          <label class="tradein__label-agree" for="tradein-agree">Согласен с условиями обработки персональных
+          <input class="form__input-name" type="text" name="name" placeholder="ФИО">
+          <input class="form__input-tel" type="tel" name="tel" placeholder="+7(___)___-__-__">
+          <button class="form__button button">Отправить заявку</button>
+          <input class="form__chek-agree" type="checkbox" name="tradein-agree" id="tradein-agree" checked>
+          <label class="form__label-agree" for="tradein-agree">Согласен с условиями обработки персональных
             данных</label>
         </form>
         <img src="img/tradein/tradein-transfer.jpg" alt="Клиент сдает свою машину" class="tradein__img">
       </div>
     </section>
-  </main>
-  <!-- Футер -->
-  <footer class="footer">
+  </main> -->
+    <!-- Футер -->
+    <!-- <footer class="footer">
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js
 /?um=constructor%3A337364f07c48cea14c8054c1fc3be330f7c5575da9af8d539c01134cfab8f600&amp;
-width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script> -->
 
-    <!-- карта -->
-    <div class="footer__container">
-      <a href="" class="footer__logo logo">
-        <img src="/img/logo/logo.png" alt="Логотип компании Шкода" class="logo__img">
+    <!-- <div class="footer__container contacts">
+      <a href="" class="contacts__logo">
+        <img src="img/logo/logo.png" alt="Логотип компании Шкода" class="contacts__logo-img" width="109" height="34h">
       </a>
-      <p class="footer__address address">г. Москва ул.Тверская-Ямская, д. 123</p>
-      <p class="footer__regime regime">Ежедневнос 9:00 до
-        21:00</p>
-      <a href="tel: +78000000000" class="footer__phone phone">8(800)000-00-00</a>
-      <a href="#" class="footer__button button">Обратный звонок</a>
+      <p class="contacts__address">г. Москва ул.Тверская-Ямская, д. 123</p>
+      <p class="contacts__regime">Ежедневно с 9:00 до 21:00</p>
+      <a href="tel: +78000000000" class="contacts__phone">8(800)000-00-00</a>
+      <a href="#" class="contacts__button button"><span class="contacts__text-button">Обратный звонок</span></a>
     </div>
-  </footer>
+  </footer> -->
 
 
-  <!-- <script src="js/navigation.js"></script> -->
+
+    <!-- <script src="js/navigation.js"></script> -->
 </body>
 
 </html>
