@@ -23,7 +23,9 @@
       <a href="#" class="contacts__logo">
 
         <picture>
-          <source media="(min-width: ($min-width-tablet+60px))" srcset="img/contacts/logo.png">
+          <source type="image/webp" media="(min-width: 828px)" srcset="img/contacts/logo.webp 1x">
+          <source type="image/webp" srcset="img//contacts/logo-mobile.webp 1x">
+          <source media="(min-width: 828px)" srcset="img/contacts/logo.png">
           <img src="img/contacts/logo-mobile.png" alt="Логотип компании Шкода" class="contacts__logo-img" width="109"
             height="34">
         </picture>
@@ -42,9 +44,9 @@
     <!-- Авто в наличие -->
     <section class="available">
       <picture>
-        <source type="image/webp" media="(min-width:($min-width-tablet+60px))" srcset="img/available/fon.webp 1x">
+        <source type="image/webp" media="(min-width: 828px)" srcset="img/available/fon.webp 1x">
         <source type="image/webp" srcset="img//available/fon-mobile.webp 1x">
-        <source media="(min-width:($min-width-tablet+60px))" srcset="img/available/fon.jpg">
+        <source media="(min-width: 828px" srcset="img/available/fon.jpg">
         <img src="img/available/fon-mobile.jpg" alt="Группа автомобилей Шкода на льду" class="available__img">
       </picture>
 

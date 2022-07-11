@@ -5,7 +5,7 @@
 
 .available__img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -45,4 +45,20 @@
 
 .available__text {
   display: none;
+}
+
+@media (min-width: ($min-width-desktop + 100px)) {
+  .available {
+    min-height: 500px;
+  }
+
+  .available__info {
+    width: 389px;
+    min-height: 290px;
+    left: calc(1092/1920*100%);
+    top: calc(146/500*100%);
+
+  }
+
+
 }
