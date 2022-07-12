@@ -1,6 +1,7 @@
 .available {
   min-height: 240px;
-  // position: relative;
+  position: relative;
+  // display: flex;
 }
 
 .available__img {
@@ -8,30 +9,24 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  // position: absolute;
+  position: absolute;
 }
 
 .available__container {
-  position: relative;
-  // z-index: 2;
-  // background-color: red;
-  // padding-top: 3.5%;
-  // display: flex;
+  padding: 16px;
 }
 
 .available__info {
   position: relative;
-  width: 314px;
-  height: 90px;
-  // left: 5%;
-  top: 16px;
-  // margin-top: 10px;
+  width: 316px;
+  min-height: 90px;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 16px;
   padding: 16px;
   box-sizing: border-box;
-  // z-index: 5;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .available__h2 {
@@ -62,58 +57,57 @@
   display: none;
 }
 
-@media (min-width: ($min-width-desktop + 100px)) {
+@media (min-width: ($min-width-tablet + 60px)) {
+  .available {
+    min-height: 360px;
+  }
+
+  .available__info {
+    width: calc(389px/1.5);
+    min-height: calc(290px/1.5);
+    margin: calc(146px/1.5) 220px 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .available__h2 {
+    margin: 0;
+  }
+
+  .available__text {
+    display: block;
+    color: #FFFFFF;
+    margin: 0;
+  }
+}
+
+@media (min-width: ($min-width-desktop+100px)) {
   .available {
     min-height: 500px;
   }
 
   .available__info {
     width: 389px;
-    height: 290px;
-    left: calc(1092/1920*100%);
-    top: 146px;
-  }
-
-  .available__img {
-    position: absolute;
-  }
-}
-
-@media (min-width: ($min-width-desktop+100px)) {
-  .available__text {
-    display: block;
-    color: #FFFFFF;
+    min-height: 290px;
+    margin: 146px 220px auto auto;
+    gap: 20px;
   }
 
   .available__h2 {
     font-weight: 700;
     font-size: 32px;
-    line-height: 120%;
-    text-transform: uppercase;
-    color: #FFFFFF;
   }
 
   .available__button {
     width: 264px;
-    height: 67px;
-    background: #4DA82F;
+    min-height: 67px;
     border-radius: 64px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    text-transform: uppercase;
   }
 
   .available__text {
     font-size: 16px;
     line-height: 120%;
-    color: #FFFFFF;
-  }
-
-  .available__info {
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 }
