@@ -10,6 +10,7 @@
   width: 110px;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 
 .contacts__logo-img {
@@ -64,6 +65,7 @@
   text-decoration: none;
   color: #000000;
   cursor: pointer;
+  // display: none;
 }
 
 .contacts__button {

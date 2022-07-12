@@ -77,7 +77,8 @@
   text-decoration: none;
   width: 110px;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-grow: 1; }
 
 .contacts__logo-img {
   display: block;
@@ -179,6 +180,9 @@
   line-height: 120%;
   text-transform: uppercase; }
 
+@media (min-width: 1124px) {
+  font-size: 32px; }
+
 .page {
   font-family: "SKODANext", sans-serif;
   font-style: normal;
@@ -212,8 +216,7 @@
     min-height: 80px; } }
 
 .available {
-  min-height: 240px;
-  position: relative; }
+  min-height: 240px; }
 
 .available__img {
   width: 100%;
@@ -222,20 +225,25 @@
      object-fit: cover;
   display: block; }
 
+.available__container {
+  position: relative; }
+
 .available__info {
-  position: absolute;
-  width: 306px;
-  min-height: 90px;
-  left: 5%;
-  top: 7%;
+  position: relative;
+  width: 314px;
+  height: 90px;
+  top: 16px;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 16px;
-  padding: 16px; }
+  padding: 16px;
+  box-sizing: border-box; }
 
 .available__h2 {
   font-size: 16px;
   line-height: 140%;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 10px; }
 
 .available__button {
   width: 157px;
@@ -256,9 +264,49 @@
     min-height: 500px; }
   .available__info {
     width: 389px;
-    min-height: 290px;
+    height: 290px;
     left: calc(1092/1920*100%);
-    top: calc(146/500*100%); } }
+    top: 146px; }
+  .available__img {
+    position: absolute; } }
+
+@media (min-width: 1124px) {
+  .available__text {
+    display: block;
+    color: #FFFFFF; }
+  .available__h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF; }
+  .available__button {
+    width: 264px;
+    height: 67px;
+    background: #4DA82F;
+    border-radius: 64px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase; }
+  .available__text {
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF; }
+  .available__info {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; } }
+
+.servis-add {
+  padding: 16px; }
+
+.servis-add__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: calc(8/(375-32)*100%);
+       column-gap: calc(8/(375-32)*100%); }
 
 .footer {
   display: none; }
