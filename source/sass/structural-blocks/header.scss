@@ -34,18 +34,28 @@
   width: 40px;
   height: 40px;
   // justify-self: end;
+  // position: relative;
 }
 
-.header__button::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  display: block;
-  // background-image: url(../img/icons/phone.svg);
-  background-image: url(../img/sprite.svg#phone);
-  background-repeat: no-repeat;
-  background-position: center center;
+.header__icons-phone {
+  // background-color: transparent;
+  fill: aqua;
 }
+
+// .header__icons-phone:hover {
+//   fill: aqua;
+// }
+
+// .header__button::before {
+//   content: "";
+//   width: 16px;
+//   height: 16px;
+//   display: block;
+//   // background-image: url(../img/icons/phone.svg);
+//   background-image: url(../img/sprite.svg#phone);
+//   background-repeat: no-repeat;
+//   background-position: center center;
+// }
 
 .header__text-button {
   font-size: 16px;
@@ -76,7 +86,7 @@
     min-height: 44px;
   }
 
-  .header__button::before {
+  .header__icons-phone {
     display: none;
   }
 
@@ -85,7 +95,7 @@
   }
 }
 
-@media (min-width: ($min-width-desktop+100px)) {
+@media (min-width: ($min-width-desktop+90px)) {
 
   .header__logo {
     width: 146px;
