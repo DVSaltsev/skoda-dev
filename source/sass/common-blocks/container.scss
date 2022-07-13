@@ -8,18 +8,20 @@
 @media (min-width: ($min-width-tablet+60px)) {
   .container {
     // padding: 0px 30px;
+    padding: 0 4.3%;
   }
 }
 
 @media (min-width: ($min-width-desktop+100px)) {
   .container {
-    padding: 0px 50px;
+    // padding: 0px 50px;
+    padding: 0 4.3%;
   }
 }
 
-@media (min-width: ($max-width-desktop+100px)) {
+@media (min-width: ($max-width-desktop)) {
   .container {
-    padding: 0px 0px;
+    // padding: 0px 0px;
     max-width: $max-width-desktop;
   }
 
