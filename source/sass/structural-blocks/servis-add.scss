@@ -58,6 +58,13 @@
   font-size: 10px;
   line-height: 120%;
   color: #4DA82F;
+  display: flex;
+  gap: 5%;
+}
+
+.servis-add__mark {
+  fill: transparent;
+  stroke: #DADADA;
 }
 
 @media (min-width: ($min-width-tablet + 60px)) {
@@ -67,12 +74,19 @@
   }
 
   .servis-add__list {
-    column-gap: calc(100/1280*100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // column-gap: calc(100/1280*100%);
+    column-gap: 2%;
+    row-gap: 2%;
   }
 
   .servis-add__item {
-    padding: 0px;
-    width: 27%;
+    // width: 100%;
+    flex-grow: 0;
+    padding: 0;
+    width: 100%;
+
   }
 
   .servis-add__img {
@@ -82,23 +96,31 @@
   }
 
   .servis-add__wrapper-text {
-    padding: 16px;
-    min-height: 198px;
+    min-height: (88px+198px)/2;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    row-gap: 0;
+    // row-gap: 8px;
+    box-sizing: border-box;
+    padding: 5% 5%;
+    // min-height: 198px;
+    // justify-content: space-between;
+    // row-gap: 0;
   }
 
   .servis-add__h3 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .servis-add__text {
     display: block;
     margin: 0;
+    font-size: 12px;
+    font-weight: 300;
   }
 
   .servis-add__link {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 120%;
     color: #000000;
   }
@@ -112,51 +134,17 @@
   }
 }
 
-@media (min-width: ($min-width-desktop + 100px)) {
-  .servis-add {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
-
-  .servis-add__list {
-    column-gap: calc(80/1280*100%);
-  }
-
-  .servis-add__item {
-    padding: 0px;
-    width: 27%;
-  }
-
-  .servis-add__img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .servis-add__wrapper-text {
-    padding: 16px;
-    min-height: 198px;
-  }
-
+@media (min-width: ($min-width-desktop + 90px)) {
   .servis-add__h3 {
     font-size: 24px;
   }
 
   .servis-add__text {
-    display: block;
+    font-size: 16px;
   }
 
   .servis-add__link {
     font-size: 16px;
-    line-height: 120%;
-    color: #000000;
-  }
 
-  .servis-add__h3-large {
-    display: block;
-  }
-
-  .servis-add__h3-small {
-    display: none;
   }
 }
