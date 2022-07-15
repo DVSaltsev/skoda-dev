@@ -10,35 +10,27 @@
   align-items: center;
 }
 
-.header__address-wrapper {
+.header__address-regime-wrapper {
   display: none;
 }
 
 .header__phone-wrapper {
+  width: 166px;
+  min-height: 16px;
   display: flex;
   align-items: center;
-
-  // width: 178px;
-  // justify-content: space-between;
-  justify-content: space-around;
-  // flex-grow: 1;
-  // gap: calc(16/178*100%);
+  justify-content: space-between;
 }
 
-.header__phone {
-  // width: 100%;
-  margin-right: 10px;
-}
+
+.header__phone {}
 
 .header__button {
   width: 40px;
   height: 40px;
-  // justify-self: end;
-  // position: relative;
 }
 
 .header__icons-phone {
-  // background-color: transparent;
   fill: white;
 }
 
@@ -46,39 +38,46 @@
 //   fill: aqua;
 // }
 
-// .header__button::before {
-//   content: "";
-//   width: 16px;
-//   height: 16px;
-//   display: block;
-//   // background-image: url(../img/icons/phone.svg);
-//   background-image: url(../img/sprite.svg#phone);
-//   background-repeat: no-repeat;
-//   background-position: center center;
-// }
-
 .header__text-button {
-  font-size: 16px;
-  line-height: 140%;
-  color: #FFFFFF;
   display: none;
 }
 
 @media (min-width: ($min-width-tablet+60px)) {
-  .header__logo {
-    width: 146px;
-    min-height: 46px;
+
+  .header {
+    // background-color: red;
+    min-height: 78px;
   }
 
-  .header__address-wrapper {
+
+  .header__logo {
+    width: 110px;
+    min-height: 34px;
+  }
+
+  .header__address-regime-wrapper {
+    width: 320px;
+    min-height: 30px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10%;
   }
 
+  .header__address {
+    // flex: 0 1 186px;
+    // width: 240px;
+  }
+
   .header__phone-wrapper {
-    width: 40%;
+    width: 320px;
+    min-height: 38px;
+  }
+
+  .header__phone {
+    font-size: 18px;
+
   }
 
   .header__button {
@@ -91,34 +90,65 @@
   }
 
   .header__text-button {
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+
     display: inline;
   }
 }
 
 @media (min-width: ($min-width-desktop+90px)) {
 
-  .header__logo {
-    width: 146px;
-    min-height: 46px;
-  }
-
   .header {
+    // background-color: red;
     min-height: 80px;
   }
 
+  .header__logo {
+    width: 110px;
+    min-height: 34px;
+  }
+
+  .header__address-regime-wrapper {
+    width: 380px;
+    min-height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+  }
+
+  .header__address {
+    // flex: 0 1 186px;
+    // width: 240px;
+  }
+
   .header__phone-wrapper {
-    width: 35%;
+    width: 406px;
+    min-height: 38px;
   }
 
   .header__phone {
-    // width: 100%;
-    margin-right: 10px;
+    font-size: 24px;
   }
 
   .header__button {
     width: 194px;
     min-height: 52px;
-    // justify-self: end;
+  }
+
+  .header__icons-phone {
+    display: none;
+  }
+
+  .header__text-button {
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+
+    display: inline;
   }
 
 }
