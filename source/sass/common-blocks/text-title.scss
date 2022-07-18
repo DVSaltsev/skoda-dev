@@ -5,6 +5,14 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 1124px) {
-  font-size: 32px;
+@media (min-width: ($min-width-tablet+60px)) {
+  .text-title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: ($min-width-desktop+90px)) {
+  .text-title {
+    font-size: 32px;
+  }
 }

@@ -106,171 +106,250 @@
     <!-- Шок-цена -->
     <section class="shoсk">
       <div class="shoсk__container container">
-        
-          <img src="img/shock/fon-mobile.jpg" alt="Группа автомобилей Шкода в ангаре" class="shock__img" width="375"
-            heigth="240">
-          <div class="shock__info-wrapper">
-            <div class="shock__wrapper-price">
-              <h2 class="shock__h2">Шок цена</h2>
-              <a href="" class="shock__button button">только 3 дня</a>
-            </div>
-            <p class="shock__text">Успей зафиксировать условия</p>
-            <div class="shock__items">
-              <div class="shock__item shock__days"><span class="shock__wrapper-number">00</span></div>
-              <div class="shock__item shock__hours"><span class="shock__wrapper-number">00</span></div>
-              <div class="shock__item shock__minutes"><span class="shock__wrapper-number">00</span></div>
-              <div class="shock__item shock__seconds"><span class="shock__wrapper-number">00</span></div>
-            </div>
+
+        <img src="img/shock/fon-mobile.jpg" alt="Группа автомобилей Шкода в ангаре" class="shock__img" width="375"
+          heigth="240">
+        <div class="shock__info-wrapper">
+          <div class="shock__wrapper-price">
+            <h2 class="shock__h2">Шок цена</h2>
+            <a href="" class="shock__button button">только 3 дня</a>
           </div>
+          <p class="shock__text">Успей зафиксировать условия</p>
+          <div class="shock__items">
+            <div class="shock__item shock__days"><span class="shock__wrapper-number">00</span></div>
+            <div class="shock__item shock__hours"><span class="shock__wrapper-number">00</span></div>
+            <div class="shock__item shock__minutes"><span class="shock__wrapper-number">00</span></div>
+            <div class="shock__item shock__seconds"><span class="shock__wrapper-number">00</span></div>
+          </div>
+        </div>
 
 
       </div>
     </section>
-
     <!-- Модели -->
     <section class="models">
-      <div class="models-add__container container">
-        <h2 class="models-add-h2 text-title">Модельный ряд Шкода</h2>
-        <ul class="models__name-models">
-          <li class="models__name-models-item"><a class="models__nav">Karoq</a></li>
-          <li class="models__name-models-item"><a class="models__nav">Rapid</a></li>
-          <li class="models__name-models-item"><a class="models__nav">Octavia</a></li>
-          <li class="models__name-models-item"><a class="models__nav">Kodiaq</a></li>
-          <li class="models__name-models-item"><a class="models__nav">Superb</a></li>
+      <div class="models__container container">
+        <h2 class="models__h2 text-title">Модельный ряд Шкода</h2>
+        <ul class="models__nav">
+          <li class="models__nav-item"><a href="#" class="models__nav-link">Karoq</a></li>
+          <li class="models__nav-item"><a href="#" class="models__nav-link">Rapid</a></li>
+          <li class="models__nav-item"><a href="#" class="models__nav-link">Octavia</a></li>
+          <li class="models__nav-item"><a href="#" class="models__nav-link">Kodiaq</a></li>
+          <li class="models__nav-item"><a href="#" class="models__nav-link">Superb</a></li>
         </ul>
-        <!-- <ul class="models__list">
+        <ul class="models__list">
           <li class="models__item">
-            <div class="models__wrapper">
-              <img src="img/models/karoq.jpg" alt="Фото автомобиля" class="models__img">
-            </div>
+            <h3 class="models__name text-title models__name-above">Karoq</h3>
+            <img src="img/models/karoq.jpg" alt="Фото автомобиля" class="models__img" width="343" height="207">
             <div class="models__name-info">
-              <h3 class="models__name text-title">Karoq</h3>
+              <h3 class="models__name text-title models__name-below">Karoq</h3>
               <ul class="models__info">
-                <li class="models__info-item">
-                  Дата поставки:14.02.2022
+                <li class="models__info-item models__info-date">
+                  <svg class="models__icons-auto" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#auto"></use>
+                  </svg>
+                  <p class="models__text">Дата поставки: <span class="models__text-value">14.02.2022</span></p>
                 </li>
-                <li class="models__info-item">
-                  Доступно: 100 автомобилей
+                <li class="models__info-item models__info-amount">
+                  <svg class="models__icons-check" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                  <p class="models__text">Доступно: <span class="models__text-value">100</span> автомобилей
+                  </p>
                 </li>
-                <li class="models__info-item">
-                  КАСКО, зимняя резина и платеж по кредиту в подарок!
+                <li class="models__info-item models__info-gift">
+                  <svg class="models__icons-gift" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#gift"></use>
+                  </svg>
+                  <p class="models__text">КАСКО, зимняя резина и платеж по кредиту <span class="models__text-value">в
+                      подарок!</span>
+                  </p>
                 </li>
               </ul>
             </div>
             <div class="models__actions">
-              <p class="models__price">1234567<a href="#" class="models__price-button button-small">Успей! Только 3
-                  дня!</a></p>
-              <a href="#" class="models__fix-button button">Зафиксировать цену на 3 дня</a>
-              <a href="#" class="models__credit-button button">Узнать цену в кредит</a>
-              <a href="#" class="models__tradein-button button">Выгода по Trade-in до 100000 руб.</a>
+              <div class="models__wrapper-price-button">
+                <p class="models__price text-title">1234567 руб.</p>
+                <a href="#" class="models__price-button button">Успей! Только 3 дня!</a>
+              </div>
+
+              <div class="models__wrapper-button">
+                <a href="#" class="models__fix-button button">Зафиксировать цену на 3 дня</a>
+                <a href="#" class="models__credit-button button">Узнать цену в кредит</a>
+                <a href="#" class="models__tradein-button button">Выгода по Trade-in до 100000 руб.</a>
+              </div>
+
             </div>
-            р
           </li>
           <li class="models__item">
-            <div class="models__wrapper">
-              <img src="img/models/rapid.jpg" alt="Фото автомобиля" class="models__img">
-            </div>
+            <h3 class="models__name text-title models__name-above">Rapid</h3>
+            <img src="img/models/rapid.jpg" alt="Фото автомобиля" class="models__img" width="343" height="207">
             <div class="models__name-info">
-              <h3 class="models__name text-title">Rapid</h3>
+              <h3 class="models__name text-title models__name-below">Rapid</h3>
               <ul class="models__info">
-                <li class="models__info-item">
-                  Дата поставки:14.02.2022
+                <li class="models__info-item models__info-date">
+                  <svg class="models__icons-auto" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#auto"></use>
+                  </svg>
+                  <p class="models__text">Дата поставки: <span class="models__text-value">14.02.2022</span></p>
                 </li>
-                <li class="models__info-item">
-                  Доступно: 100 автомобилей
+                <li class="models__info-item models__info-amount">
+                  <svg class="models__icons-check" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                  <p class="models__text">Доступно: <span class="models__text-value">100</span> автомобилей
+                  </p>
                 </li>
-                <li class="models__info-item">
-                  КАСКО, зимняя резина и платеж по кредиту в подарок!
+                <li class="models__info-item models__info-gift">
+                  <svg class="models__icons-gift" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#gift"></use>
+                  </svg>
+                  <p class="models__text">КАСКО, зимняя резина и платеж по кредиту <span class="models__text-value">в
+                      подарок!</span>
+                  </p>
                 </li>
               </ul>
             </div>
             <div class="models__actions">
-              <p class="models__price">1234567<a href="#" class="models__price-button button-small">Успей! Только 3
-                  дня!</a></p>
-              <a href="#" class="models__fix-button button">Зафиксировать цену на 3 дня</a>
-              <a href="#" class="models__credit-button button">Узнать цену в кредит</a>
-              <a href="#" class="models__tradein-button button">Выгода по Trade-in до 100000 руб.</a>
+              <div class="models__wrapper-price-button">
+                <p class="models__price text-title">1234567 руб.</p>
+                <a href="#" class="models__price-button button">Успей! Только 3 дня!</a>
+              </div>
+
+              <div class="models__wrapper-button">
+                <a href="#" class="models__fix-button button">Зафиксировать цену на 3 дня</a>
+                <a href="#" class="models__credit-button button">Узнать цену в кредит</a>
+                <a href="#" class="models__tradein-button button">Выгода по Trade-in до 100000 руб.</a>
+              </div>
             </div>
           </li>
           <li class="models__item">
-            <div class="models__wrapper">
-              <img src="img/models/octavia.jpg" alt="Фото автомобиля" class="models__img">
-            </div>
+            <h3 class="models__name text-title models__name-above">Octavia</h3>
+            <img src="img/models/octavia.jpg" alt="Фото автомобиля" class="models__img" width="343" height="207">
             <div class="models__name-info">
-              <h3 class="models__name text-title">Octavia</h3>
+              <h3 class="models__name text-title models__name-below">Octavia</h3>
               <ul class="models__info">
-                <li class="models__info-item">
-                  Дата поставки:14.02.2022
+                <li class="models__info-item models__info-date">
+                  <svg class="models__icons-auto" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#auto"></use>
+                  </svg>
+                  <p class="models__text">Дата поставки: <span class="models__text-value">14.02.2022</span></p>
                 </li>
-                <li class="models__info-item">
-                  Доступно: 100 автомобилей
+                <li class="models__info-item models__info-amount">
+                  <svg class="models__icons-check" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                  <p class="models__text">Доступно: <span class="models__text-value">100</span> автомобилей
+                  </p>
                 </li>
-                <li class="models__info-item">
-                  КАСКО, зимняя резина и платеж по кредиту в подарок!
+                <li class="models__info-item models__info-gift">
+                  <svg class="models__icons-gift" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#gift"></use>
+                  </svg>
+                  <p class="models__text">КАСКО, зимняя резина и платеж по кредиту <span class="models__text-value">в
+                      подарок!</span>
+                  </p>
                 </li>
               </ul>
             </div>
             <div class="models__actions">
-              <p class="models__price">1234567<a href="#" class="models__price-button button-small">Успей! Только 3
-                  дня!</a></p>
-              <a href="#" class="models__fix-button button">Зафиксировать цену на 3 дня</a>
-              <a href="#" class="models__credit-button button">Узнать цену в кредит</a>
-              <a href="#" class="models__tradein-button button">Выгода по Trade-in до 100000 руб.</a>
+              <div class="models__wrapper-price-button">
+                <p class="models__price text-title">1234567 руб.</p>
+                <a href="#" class="models__price-button button">Успей! Только 3 дня!</a>
+              </div>
+
+              <div class="models__wrapper-button">
+                <a href="#" class="models__fix-button button">Зафиксировать цену на 3 дня</a>
+                <a href="#" class="models__credit-button button">Узнать цену в кредит</a>
+                <a href="#" class="models__tradein-button button">Выгода по Trade-in до 100000 руб.</a>
+              </div>
             </div>
           </li>
           <li class="models__item">
-            <div class="models__wrapper">
-              <img src="img/models/kodiaq.jpg" alt="Фото автомобиля" class="models__img">
-            </div>
+            <h3 class="models__name text-title models__name-above">Kodiaq</h3>
+            <img src="img/models/Kodiaq.jpg" alt="Фото автомобиля" class="models__img" width="343" height="207">
             <div class="models__name-info">
-              <h3 class="models__name text-title">Kodiaq</h3>
+              <h3 class="models__name text-title models__name-below">Kodiaq</h3>
               <ul class="models__info">
-                <li class="models__info-item">
-                  Дата поставки:14.02.2022
+                <li class="models__info-item models__info-date">
+                  <svg class="models__icons-auto" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#auto"></use>
+                  </svg>
+                  <p class="models__text">Дата поставки: <span class="models__text-value">14.02.2022</span></p>
                 </li>
-                <li class="models__info-item">
-                  Доступно: 100 автомобилей
+                <li class="models__info-item models__info-amount">
+                  <svg class="models__icons-check" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                  <p class="models__text">Доступно: <span class="models__text-value">100</span> автомобилей
+                  </p>
                 </li>
-                <li class="models__info-item">
-                  КАСКО, зимняя резина и платеж по кредиту в подарок!
+                <li class="models__info-item models__info-gift">
+                  <svg class="models__icons-gift" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#gift"></use>
+                  </svg>
+                  <p class="models__text">КАСКО, зимняя резина и платеж по кредиту <span class="models__text-value">в
+                      подарок!</span>
+                  </p>
                 </li>
               </ul>
             </div>
             <div class="models__actions">
-              <p class="models__price">1234567<a href="#" class="models__price-button button-small">Успей! Только 3
-                  дня!</a></p>
-              <a href="#" class="models__fix-button button">Зафиксировать цену на 3 дня</a>
-              <a href="#" class="models__credit-button button">Узнать цену в кредит</a>
-              <a href="#" class="models__tradein-button button">Выгода по Trade-in до 100000 руб.</a>
+              <div class="models__wrapper-price-button">
+                <p class="models__price text-title">1234567 руб.</p>
+                <a href="#" class="models__price-button button">Успей! Только 3 дня!</a>
+              </div>
+
+              <div class="models__wrapper-button">
+                <a href="#" class="models__fix-button button">Зафиксировать цену на 3 дня</a>
+                <a href="#" class="models__credit-button button">Узнать цену в кредит</a>
+                <a href="#" class="models__tradein-button button">Выгода по Trade-in до 100000 руб.</a>
+              </div>
             </div>
           </li>
           <li class="models__item">
-            <div class="models__wrapper">
-              <img src="img/models/superb.jpg" alt="Фото автjмобиля" class="models__img">
-            </div>
+            <h3 class="models__name text-title models__name-above">Superb</h3>
+            <img src="img/models/superb.jpg" alt="Фото автомобиля" class="models__img" width="343" height="207">
             <div class="models__name-info">
-              <h3 class="models__name text-title">Superb</h3>
+              <h3 class="models__name text-title models__name-below">Superb</h3>
               <ul class="models__info">
-                <li class="models__info-item">
-                  Дата поставки:14.02.2022
+                <li class="models__info-item models__info-date">
+                  <svg class="models__icons-auto" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#auto"></use>
+                  </svg>
+                  <p class="models__text">Дата поставки: <span class="models__text-value">14.02.2022</span></p>
                 </li>
-                <li class="models__info-item">
-                  Доступно: 100 автомобилей
+                <li class="models__info-item models__info-amount">
+                  <svg class="models__icons-check" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                  <p class="models__text">Доступно: <span class="models__text-value">100</span> автомобилей
+                  </p>
                 </li>
-                <li class="models__info-item">
-                  КАСКО, зимняя резина и платеж по кредиту в подарок!
+                <li class="models__info-item models__info-gift">
+                  <svg class="models__icons-gift" width="30" height="26">
+                    <use xlink:href="img/sprite.svg#gift"></use>
+                  </svg>
+                  <p class="models__text">КАСКО, зимняя резина и платеж по кредиту <span class="models__text-value">в
+                      подарок!</span>
+                  </p>
                 </li>
               </ul>
             </div>
             <div class="models__actions">
-              <p class="models__price">1234567<a href="#" class="models__price-button button-small">Успей! Только 3
-                  дня!</a></p>
-              <a href="#" class="models__fix-button button">Зафиксировать цену на 3 дня</a>
-              <a href="#" class="models__credit-button button">Узнать цену в кредит</a>
-              <a href="#" class="models__tradein-button button">Выгода по Trade-in до 100000 руб.</a>
+              <div class="models__wrapper-price-button">
+                <p class="models__price text-title">1234567 руб.</p>
+                <a href="#" class="models__price-button button">Успей! Только 3 дня!</a>
+              </div>
+
+              <div class="models__wrapper-button">
+                <a href="#" class="models__fix-button button">Зафиксировать цену на 3 дня</a>
+                <a href="#" class="models__credit-button button">Узнать цену в кредит</a>
+                <a href="#" class="models__tradein-button button">Выгода по Trade-in до 100000 руб.</a>
+              </div>
             </div>
           </li>
-        </ul> -->
+        </ul>
       </div>
     </section>
     <!-- Комплектации -->
@@ -299,7 +378,6 @@
             <div class="settings__actions">
               <a href="#" class="settings__button-action button">Узнать цену по акции</a>
               <a href="#" class="settings__button-credit button">Узнать цену в кредит</a>
-
             </div>
           </li>
           <li class="settings__item">
