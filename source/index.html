@@ -438,24 +438,29 @@
       </div>
     </section>
     <!-- Кредит -->
-    <section class="сredit">
-      <div class="сredit__container container">
+    <section class="credit">
+      <div class="credit__container container">
         <div class="credit__wrapper-img"><img src="img/credit/credit-meet-mobile.jpg" alt="Клиент оформляет кредит"
-            class="сredit__img" width="375" height="240"></div>
-            <div class="credit__r"></div>
-        <h2 class="сredit__h2 text-title">Шкода в кредит по условиям 2022 года</h2>
+            class="credit__img" width="375" height="240"></div>
+
+        <h2 class="credit__h2 text-title">Шкода в кредит по условиям 2022 года</h2>
         <ul class="credit__list">
-          <li class="credit__item">Первоначальный взнос от 10%</li>
-          <li class="credit__item">Одобрение 98%</li>
-          <li class="credit__item">Страховка от потери работы</li>
+          <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
+              <use xlink:href="img/sprite.svg#arrow-credit"></use>
+            </svg>Первоначальный взнос от 10%</li>
+          <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
+              <use xlink:href="img/sprite.svg#arrow-credit"></use>
+            </svg>Одобрение 98%</li>
+          <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
+              <use xlink:href="img/sprite.svg#arrow-credit"></use>
+            </svg>Страховка от потери работы</li>
         </ul>
         <form class="credit__form form" action="https://echo.htmlacademy.ru" method="get">
           <input class="form__input-name" type="text" name="name" placeholder="ФИО">
           <input class="form__input-tel" type="tel" name="tel" placeholder="+7(___)___-__-__">
-          <button class="form__button button">Отправить заявку</button>
           <input class="form__chek-agree" type="checkbox" name="credit-agree" id="agree" checked>
-          <label class="form__label-agree" for="credit-agree">Согласен с условиями обработки персональных
-            данных</label>
+          <label class="form__label-agree" for="credit-agree">Согласен с условиями обработки персональных данных</label>
+          <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__notes">Подробные условия кредитования вы можете уточнить по телефону 8 (800) 000-00-00</p>
         </form>
       </div>
