@@ -140,7 +140,7 @@
         <ul class="models__list">
           <li class="models__item">
             <h3 class="models__name text-title models__name-above">Karoq</h3>
-            <img src="img/models/karoq.jpg" alt="Фото автомобиля" class="models__img" width="343" height="207">
+            <img src="img/models/karoq-mobile.png" alt="Фото автомобиля" class="models__img" width="343" height="207">
             <div class="models__name-info">
               <h3 class="models__name text-title models__name-below">Karoq</h3>
               <ul class="models__info">
@@ -183,7 +183,7 @@
           </li>
           <li class="models__item">
             <h3 class="models__name text-title models__name-above">Rapid</h3>
-            <img src="img/models/rapid.jpg" alt="Фото автомобиля" class="models__img" width="343" height="207">
+            <img src="img/models/rapid-mobile.png" alt="Фото автомобиля" class="models__img" width="343" height="207">
             <div class="models__name-info">
               <h3 class="models__name text-title models__name-below">Rapid</h3>
               <ul class="models__info">
@@ -225,7 +225,7 @@
           </li>
           <li class="models__item">
             <h3 class="models__name text-title models__name-above">Octavia</h3>
-            <img src="img/models/octavia.jpg" alt="Фото автомобиля" class="models__img" width="343" height="207">
+            <img src="img/models/octavia-mobile.png" alt="Фото автомобиля" class="models__img" width="343" height="207">
             <div class="models__name-info">
               <h3 class="models__name text-title models__name-below">Octavia</h3>
               <ul class="models__info">
@@ -267,7 +267,7 @@
           </li>
           <li class="models__item">
             <h3 class="models__name text-title models__name-above">Kodiaq</h3>
-            <img src="img/models/Kodiaq.jpg" alt="Фото автомобиля" class="models__img" width="343" height="207">
+            <img src="img/models/kodiaq-mobile.png" alt="Фото автомобиля" class="models__img" width="343" height="207">
             <div class="models__name-info">
               <h3 class="models__name text-title models__name-below">Kodiaq</h3>
               <ul class="models__info">
@@ -309,7 +309,7 @@
           </li>
           <li class="models__item">
             <h3 class="models__name text-title models__name-above">Superb</h3>
-            <img src="img/models/superb.jpg" alt="Фото автомобиля" class="models__img" width="343" height="207">
+            <img src="img/models/superb-mobile.png" alt="Фото автомобиля" class="models__img" width="343" height="207">
             <div class="models__name-info">
               <h3 class="models__name text-title models__name-below">Superb</h3>
               <ul class="models__info">
@@ -353,68 +353,96 @@
       </div>
     </section>
     <!-- Комплектации -->
-    <!-- <section class="settings">
-      <h2 class="settings-h2 text-title">Подберите комплектацию</h2>
+    <section class="settings">
       <div class="settings__container container">
-        <div class="settings__choice">
-          <select class="settings__model" name="model">
-            <option value="Superb">Superb</option>
-          </select>
-          <select class="settings__option" name="option">
-            <option value="Comfort">Комфорт</option>
-          </select>
-          <select class="settings__engine" name="engine">
-            <option value="2,5">2,5л</option>
-          </select>
+        <h2 class="settings__h2 text-title">Подберите комплектацию</h2>
+        <div class="settings__selects">
+
+          <div class="settings__wrapper-select settings__wrapper-model">
+            <select class="settings__select-item" name="model">
+              <option class="settings__select-option">Выберите модель</option>
+              <option class="settings__select-option" value="Superb">Superb1</option>
+              <option class="settings__select-option" value="Superb">Superb2</option>
+              <option class="settings__select-option" value="Superb">Superb3</option>
+            </select>
+          </div>
+
+          <div class="settings__wrapper-select settings__wrapper-option">
+            <select class="settings__select-item" name="option">
+              <option class="settings__select-option">Выберите коллекцию</option>
+              <option class="settings__select-option" value="Comfort1">Комфорт</option>
+              <option class="settings__select-option" value="Comfort2">Комфорт</option>
+              <option class="settings__select-option" value="Comfort3">Комфорт</option>
+            </select>
+          </div>
+
+          <div class="settings__wrapper-select settings__wrapper-engine">
+            <select class="settings__select-item" name="engine">
+              <option class="settings__select-option">Выберите двигатель</option>
+              <option class="settings__select-option" value="2,5">1,5л</option>
+              <option class="settings__select-option" value="2,5">2,0л</option>
+              <option class="settings__select-option" value="2,5">2,5л</option>
+            </select>
+          </div>
+
         </div>
         <ul class="settings__list">
           <li class="settings__item">
-            <img src="img/settings/superb1.jpg" alt="Фото автмобиля" class="settings__img">
+            <div class="settings__wrapper-img"><img src="img/settings/superb1.jpg" alt="Фото автмобиля"
+                class="settings__img" width="343px" height="206px"></div>
             <div class="settings__info">
               <h3 class="settings__model text-title">Superb</h3>
-              <span class="settings__option">Drive</span>
-              <span class="settings__engine">1,6л, 123 л.с., 5мКПП</span>
+              <div class="settings__wrapper-settings">
+                <span class="settings__option">Drive</span>
+                <span class="settings__engine">1,6л, 123 л.с., 5мКПП</span>
+              </div>
             </div>
-            <div class="settings__actions">
+            <div class="settings__buttons">
               <a href="#" class="settings__button-action button">Узнать цену по акции</a>
               <a href="#" class="settings__button-credit button">Узнать цену в кредит</a>
             </div>
           </li>
           <li class="settings__item">
-            <img src="img/settings/superb2.jpg" alt="Фото автмобиля" class="settings__img">
+            <div class="settings__wrapper-img"><img src="img/settings/superb2.jpg" alt="Фото автмобиля"
+                class="settings__img" width="343px" height="206px"></div>
             <div class="settings__info">
               <h3 class="settings__model text-title">Superb</h3>
-              <span class="settings__option">Drive</span>
-              <span class="settings__engine">1,6л, 123 л.с., 5мКПП</span>
+              <div class="settings__wrapper-settings">
+                <span class="settings__option">Drive</span>
+                <span class="settings__engine">1,6л, 123 л.с., 5мКПП</span>
+              </div>
             </div>
-            <div class="settings__actions">
+            <div class="settings__buttons">
               <a href="#" class="settings__button-action button">Узнать цену по акции</a>
               <a href="#" class="settings__button-credit button">Узнать цену в кредит</a>
-
             </div>
           </li>
           <li class="settings__item">
-            <img src="img/settings/superb3.jpg" alt="Фото автмобиля" class="settings__img">
+            <div class="settings__wrapper-img"><img src="img/settings/superb3.jpg" alt="Фото автмобиля"
+                class="settings__img" width="343px" height="206px"></div>
             <div class="settings__info">
               <h3 class="settings__model text-title">Superb</h3>
-              <span class="settings__option">Drive</span>
-              <span class="settings__engine">1,6л, 123 л.с., 5мКПП</span>
+
+              <div class="settings__wrapper-settings">
+                <span class="settings__option">Drive</span>
+                <span class="settings__engine">1,6л, 123 л.с., 5мКПП</span>
+              </div>
             </div>
-            <div class="settings__actions">
+            <div class="settings__buttons">
               <a href="#" class="settings__button-action button">Узнать цену по акции</a>
               <a href="#" class="settings__button-credit button">Узнать цену в кредит</a>
-
             </div>
           </li>
         </ul>
-
         <a href="#" class="settings__button-more button">Еще комплектации</a>
       </div>
-    </section> -->
+    </section>
     <!-- Кредит -->
-    <!-- <section class="сredit">
+    <section class="сredit">
+      <div class="credit__wrapper-img"><img src="img/credit/credit-meet-mobile.jpg" alt="Клиент оформляет кредит"
+        class="сredit__img" width="377" height="240"></div>
       <div class="сredit__container container">
-        <img src="img/credit/credit-meet.jpg" alt="Клиент оформляет кредит" class="сredit__img">
+
         <h2 class="сredit-h2 text-title">Шкода в кредит по условиям 2022 года</h2>
         <ul class="credit__list">
           <li class="credit__item">Первоначальный взнос от 10%</li>
@@ -432,7 +460,7 @@
           <p class="form__notes">Подробные условия кредитования вы можете уточнить по телефону 8 (800) 000-00-00</p>
         </form>
       </div>
-    </section> -->
+    </section>
 
     <!-- Трейд Ин -->
     <!-- <section class="tradein">
