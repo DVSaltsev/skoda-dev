@@ -1,9 +1,16 @@
 .available {
-  min-height: 240px;
+  // min-height: 240px;
   position: relative;
   // display: flex;
   // margin-bottom: 16px;
   display: none;
+
+}
+
+.available__wrapper-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .available__img {
@@ -11,24 +18,30 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  position: absolute;
+
 }
 
 .available__container {
   padding-top: 16px;
+  padding-bottom: 134px;
+  //  padding-right: 24px;
+  position: relative;
 }
 
 .available__info {
-  position: relative;
-  width: 316px;
-  min-height: 90px;
+  // position: relative;
+  width: 320px;
+  // min-height: 90px;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 16px;
-  padding: 16px;
+  // padding: 16px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-
+  // display: flex;
+  // flex-direction: column;
+  display: grid;
+  padding: 16px;
+  row-gap: 8px;
+  // margin-right: 24px;
 }
 
 .available__h2 {
@@ -36,17 +49,17 @@
   line-height: 140%;
   color: #FFFFFF;
   margin: 0;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 }
 
 .text-title {}
 
 .available__button {
   width: 157px;
-  height: 28px;
+  min-height: 28px;
   background: #4DA82F;
   border-radius: 64px;
-  padding: 8px 16px;
+  padding: 4px 10px;
   font-size: 10px;
   line-height: 120%;
   text-transform: uppercase;
