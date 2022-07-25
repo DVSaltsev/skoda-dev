@@ -1,0 +1,37 @@
+.tradein {
+
+  &__container {
+    display: grid;
+
+  }
+
+  &__offer {}
+
+  &__form {}
+
+  &__wrapper-check {}
+
+  &__notes {}
+
+  &__wrapper-img {
+    order: -1;
+    // width: 200px;
+    margin: 0 -16px;
+  }
+
+  &__img {
+    // display: none;
+    width: 100%;
+    height: auto;
+
+  }
+
+  &__input-name {}
+
+  &__input-tel {}
+
+  &__button {}
+
+
+
+}

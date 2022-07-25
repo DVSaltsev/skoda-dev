@@ -443,51 +443,91 @@
         <div class="credit__wrapper-img"><img src="img/credit/credit-meet-mobile.jpg" alt="Клиент оформляет кредит"
             class="credit__img" width="375" height="240"></div>
 
-        <h2 class="credit__h2 text-title">Шкода в кредит по условиям 2022 года</h2>
-        <ul class="credit__list">
-          <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
-              <use xlink:href="img/sprite.svg#arrow-credit"></use>
-            </svg>Первоначальный взнос от 10%</li>
-          <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
-              <use xlink:href="img/sprite.svg#arrow-credit"></use>
-            </svg>Одобрение 98%</li>
-          <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
-              <use xlink:href="img/sprite.svg#arrow-credit"></use>
-            </svg>Страховка от потери работы</li>
-        </ul>
-        <form class="credit__form" action="https://echo.htmlacademy.ru" method="get">
-          <input class="credit__input-name input" type="text" name="name" placeholder="ФИО">
-          <input class="credit__input-tel input" type="tel" name="tel" placeholder="+7(___)___-__-__">
-          <div class="credit__wrapper-check agree">
-            <input class="agree__input" type="checkbox" name="credit-agree" id="credit-agree">
-            <label class="agree__label" for="credit-agree">Согласен с условиями обработки персональных
-              данных</label>
-          </div>
-          <button class="credit__button button" type="submit">Отправить заявку</button>
-          <p class="credit__notes notes">Подробные условия кредитования вы можете уточнить по телефону 8 (800) 000-00-00
-          </p>
-        </form>
+        <div class="credit__wrapper-conditions">
+          <h2 class="credit__h2 text-title">Шкода в кредит по условиям 2022 года</h2>
+          <ul class="credit__list">
+            <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
+                <use xlink:href="img/sprite.svg#arrow-credit"></use>
+              </svg>Первоначальный взнос от 10%</li>
+            <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
+                <use xlink:href="img/sprite.svg#arrow-credit"></use>
+              </svg>Одобрение 98%</li>
+            <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
+                <use xlink:href="img/sprite.svg#arrow-credit"></use>
+              </svg>Страховка от потери работы</li>
+          </ul>
+          <form class="credit__form" action="https://echo.htmlacademy.ru" method="get">
+
+            <div class="credit__wrapper-send">
+              <input class="credit__input-name input" type="text" name="name" placeholder="ФИО">
+              <input class="credit__input-tel input" type="tel" name="tel" placeholder="+7(___)___-__-__">
+              <div class="credit__wrapper-check agree credit__wrapper-check-mobile">
+                <input class="agree__input" type="checkbox" name="credit-agree" id="credit-agree">
+                <label class="agree__label" for="credit-agree">Согласен с условиями обработки персональных
+                  данных</label>
+              </div>
+              <button class="credit__button button" type="submit">Отправить заявку</button>
+            </div>
+
+            <div class="credit__wrapper-check agree credit__wrapper-check-tablet">
+              <input class="agree__input" type="checkbox" name="credit-agree" id="credit-agree">
+              <label class="agree__label" for="credit-agree">Согласен с условиями обработки персональных
+                данных</label>
+            </div>
+            <p class="credit__notes notes">Подробные условия кредитования вы можете уточнить по телефону 8 (800)
+              000-00-00
+            </p>
+          </form>
+        </div>
       </div>
     </section>
 
     <!-- Трейд Ин -->
-    <!-- <section class="tradein">
+    <section class="tradein">
       <div class="tradein__container container">
-        <h2 class="tradein-h2 text-title">Выгодный Trade in
-          вместе со Škoda</h2>
-        <p class="tradein__offer">Обменяй свой старый автомобиль
-          на новую Škoda и получи скидку до 100 000 руб</p>
-        <form class="tradein__form form" action="https://echo.htmlacademy.ru" method="get">
-          <input class="form__input-name" type="text" name="name" placeholder="ФИО">
-          <input class="form__input-tel" type="tel" name="tel" placeholder="+7(___)___-__-__">
-          <button class="form__button button">Отправить заявку</button>
-          <input class="form__chek-agree" type="checkbox" name="tradein-agree" id="tradein-agree" checked>
-          <label class="form__label-agree" for="tradein-agree">Согласен с условиями обработки персональных
-            данных</label>
-        </form>
-        <img src="img/tradein/tradein-transfer.jpg" alt="Клиент сдает свою машину" class="tradein__img">
+        <div class="tradein__offer">
+          <h2 class="tradein-h2 text-title">Выгодный Trade in
+            вместе со Škoda</h2>
+          <p class="tradein__offer">Обменяй свой старый автомобиль
+            на новую Škoda и получи скидку до 100 000 руб</p>
+          <!-- <form class="tradein__form form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="form__input-name input" type="text" name="name" placeholder="ФИО">
+            <input class="form__input-tel input" type="tel" name="tel" placeholder="+7(___)___-__-__">
+            <button class="form__button button">Отправить заявку</button>
+            <div class="form__agree agree">
+              <input class="agree__input" type="checkbox" name="tradein-agree" id="tradein-agree" checked>
+              <label class="agree__label" for="tradein-agree">Согласен с условиями обработки персональных
+                данных</label>
+            </div>
+            <p class="form__notes notes">Подробные условия обмена вы можете уточнить по телефону 8 (800)
+              000-00-00
+            </p>
+          </form> -->
+        </div>
+
+        <div class="tradein__wrapper-img">
+           <!-- <picture>
+            <source type="image/webp" media="(min-width: 828px)"
+              srcset="img/available/fon.webp 1x, img/available/fon@2x.webp 2x">
+            <source type="image/webp" srcset="img//available/fon-mobile.webp 1x, img//available/fon-mobile@2x.webp 2x">
+            <source media="(min-width: 828px)" srcset="img/available/fon.jpg 1x, img/available/fon@2x.jpg 2x">
+            <img src="img/available/fon-mobile.jpg" srcset="img/available/fon-mobile@2x.jpg 2x"
+              alt="Группа автомобилей Шкода на льду" width="375px" heigth="240px" class="available__img">
+          </picture> -->
+          <picture>
+          <source media="(min-width: 828px)" srcset="img/tradein/tradein-transfer.jpg 1x, img/tradein/tradein-transfer@2x.jpg 2x">
+
+          <img src="img/tradein/tradein-transfer-mobile.jpg" srcset="img/tradein/tradein-transfer-mobile@2x.jpg 2x"
+            alt="Клиент сдает свою машину" class="tradein__img" width="375px" height="240px">
+          </picture>
+
+        </div>
+
+        <!-- srcset="img/tradein/tradein-transfer-mobile@2x.jpg 2x" -->
+        <!-- srcset="img/tradein/tradein-transfer-mobile@2x.jpg 2x" -->
+
       </div>
-    </section> -->
+    </section>
   </main>
   <!-- Футер -->
   <!-- <footer class="footer">
