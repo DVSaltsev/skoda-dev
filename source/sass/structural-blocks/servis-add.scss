@@ -11,17 +11,18 @@
 .visually-hidden {}
 
 .servis-add__list {
+  margin: 0px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: calc(8/343*100%);
+  column-gap: 8px;
   row-gap: 16px;
-  padding: 0px;
+  list-style: none;
 }
 
 .container {}
 
 .servis-add__item {
-  list-style: none;
+
   flex-grow: 1;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
   padding: 16px;

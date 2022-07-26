@@ -1,17 +1,11 @@
 .credit {
-   display: none;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-  // margin-bottom: 32px;
-  // background: #FFFFFF;
-  // box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+  // display: none;
+  padding: 16px 0px;
+
 
   &__container {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
 
-    // padding-bottom: 32px;
-    // margin: 0;
-    // padding: 0 16px;
     @media (min-width:($min-width-tablet+60px)) {
       display: grid;
       grid-template-columns: 524/1280*100% 1fr;
@@ -30,6 +24,7 @@
       display: grid;
       padding-top: 16px;
       padding-bottom: 16px;
+      row-gap: 8px;
     }
 
     @media (min-width:($min-width-desktop+90px)) {
@@ -62,7 +57,7 @@
     object-fit: cover;
 
     @media (min-width:($min-width-tablet+60px)) {
-      // object-fit: contain;
+      object-fit: contain;
     }
 
     @media (min-width:($min-width-desktop+90px)) {
@@ -93,7 +88,7 @@
     padding: 0;
     margin: 0;
     // padding: 12px 0 12px 0;
-    line-height: 140%;
+    line-height: 120%;
     margin-bottom: 8px;
     display: grid;
     row-gap: 6px;
@@ -125,6 +120,12 @@
     // padding: 12px 0 16px;
     display: grid;
     row-gap: 16px;
+
+    @media (min-width:($min-width-tablet+60px)) {
+      row-gap: 8px;
+    }
+
+
   }
 
   &__wrapper-send {
@@ -163,24 +164,5 @@
     }
   }
 
-  &__button {
-    width: 100%;
-    min-height: 52px;
-    border: none;
-    outline: none;
-    // order: 1;
 
-    @media (min-width:($min-width-tablet+60px)) {
-      min-height: 36px;
-
-      // order: 0;
-      @media (min-width:($min-width-desktop+90px)) {}
-
-      font-size: 12px;
-    }
-  }
-
-  &__notes {
-    // order: 2;
-  }
 }

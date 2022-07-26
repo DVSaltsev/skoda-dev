@@ -11,6 +11,7 @@
     align-items: center;
     // flex-wrap: wrap;
     overflow: auto;
+    column-gap: 16px;
   }
 
   &__logo {
@@ -31,10 +32,11 @@
     // flex: 1 1 auto;
     // flex-wrap: wrap;
     overflow: auto;
+    column-gap: 16px;
   }
 
   &__phone {
-    margin-right: 16px;
+    // margin-right: 16px;
   }
 
   &__button {
@@ -53,17 +55,16 @@
 
 @media (min-width: ($min-width-tablet+60px)) {
 
-  .header {
-     }
+  .header {}
 
-  .header__logo {
-   }
+  .header__logo {}
 
   .header__address-regime-wrapper {
     // width: 340px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 16px;
   }
 
   .header__address {

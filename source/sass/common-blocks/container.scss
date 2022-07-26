@@ -1,21 +1,8 @@
 .container {
-  min-width: $min-width-mobile;
-
-  @media (min-width: ($min-width-mobile)) {
-    max-width: $min-width-mobile;
-    margin: 0 auto;
-  }
-
-  @media (min-width: ($min-width-mobile+32px)) {
-
-      // padding: 0px 30px;
-      max-width: none;
-      margin: 0 16px;
-
-  }
+  padding: 0px 16px;
+  box-sizing: border-box;
 
   @media (min-width: ($min-width-tablet+32px)) {
-
     // padding: 0px 30px;
     max-width: $min-width-tablet;
     margin: 0 auto;
@@ -23,11 +10,10 @@
   }
 
   @media (min-width: ($min-width-tablet+60px)) {
-
     // padding: 0px 30px;
     // max-width: $min-width-tablet;
     max-width: none;
-    margin: 0 30px;
+    padding: 0px 30px;
 
   }
 
@@ -44,14 +30,14 @@
 
     // padding: 0px 50px;
     max-width: none;
-    margin: 0 45px;
+    padding: 0 45px;
 
   }
 
   @media (min-width: ($max-width-desktop+90px)) {
 
     // padding: 0px 0px;
-    margin: 0 0px;
+    // margin: 0 0px;
     max-width: $max-width-desktop;
     margin: 0 auto;
 

@@ -456,25 +456,17 @@
                 <use xlink:href="img/sprite.svg#arrow-credit"></use>
               </svg>Страховка от потери работы</li>
           </ul>
-          <form class="credit__form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="credit__form form" action="https://echo.htmlacademy.ru" method="get">
 
-            <div class="credit__wrapper-send">
-              <input class="credit__input-name input" type="text" name="name" placeholder="ФИО">
-              <input class="credit__input-tel input" type="tel" name="tel" placeholder="+7(___)___-__-__">
-              <div class="credit__wrapper-check agree credit__wrapper-check-mobile">
-                <input class="agree__input" type="checkbox" name="credit-agree" id="credit-agree">
-                <label class="agree__label" for="credit-agree">Согласен с условиями обработки персональных
-                  данных</label>
-              </div>
-              <button class="credit__button button" type="submit">Отправить заявку</button>
-            </div>
-
-            <div class="credit__wrapper-check agree credit__wrapper-check-tablet">
-              <input class="agree__input" type="checkbox" name="credit-agree" id="credit-agree">
-              <label class="agree__label" for="credit-agree">Согласен с условиями обработки персональных
+            <input class="form__input-name form__input" type="text" name="name" placeholder="ФИО">
+            <input class="form__input-tel form__input" type="tel" name="tel" placeholder="+7(___)___-__-__">
+            <div class="form__wrapper-agree">
+              <input class="form__checkbox-agree" type="checkbox" name="credit-agree" id="credit-agree">
+              <label class="form__label-agree" for="credit-agree">Согласен с условиями обработки персональных
                 данных</label>
             </div>
-            <p class="credit__notes notes">Подробные условия кредитования вы можете уточнить по телефону 8 (800)
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <p class="form__notes notes">Подробные условия кредитования вы можете уточнить по телефону 8 (800)
               000-00-00
             </p>
           </form>
@@ -485,28 +477,8 @@
     <!-- Трейд Ин -->
     <section class="tradein">
       <div class="tradein__container container">
-        <div class="tradein__offer">
-          <h2 class="tradein-h2 text-title">Выгодный Trade in
-            вместе со Škoda</h2>
-          <p class="tradein__offer">Обменяй свой старый автомобиль
-            на новую Škoda и получи скидку до 100 000 руб</p>
-          <!-- <form class="tradein__form form" action="https://echo.htmlacademy.ru" method="get">
-            <input class="form__input-name input" type="text" name="name" placeholder="ФИО">
-            <input class="form__input-tel input" type="tel" name="tel" placeholder="+7(___)___-__-__">
-            <button class="form__button button">Отправить заявку</button>
-            <div class="form__agree agree">
-              <input class="agree__input" type="checkbox" name="tradein-agree" id="tradein-agree" checked>
-              <label class="agree__label" for="tradein-agree">Согласен с условиями обработки персональных
-                данных</label>
-            </div>
-            <p class="form__notes notes">Подробные условия обмена вы можете уточнить по телефону 8 (800)
-              000-00-00
-            </p>
-          </form> -->
-        </div>
-
         <div class="tradein__wrapper-img">
-           <!-- <picture>
+          <!-- <picture>
             <source type="image/webp" media="(min-width: 828px)"
               srcset="img/available/fon.webp 1x, img/available/fon@2x.webp 2x">
             <source type="image/webp" srcset="img//available/fon-mobile.webp 1x, img//available/fon-mobile@2x.webp 2x">
@@ -515,12 +487,32 @@
               alt="Группа автомобилей Шкода на льду" width="375px" heigth="240px" class="available__img">
           </picture> -->
           <picture>
-          <source media="(min-width: 828px)" srcset="img/tradein/tradein-transfer.jpg 1x, img/tradein/tradein-transfer@2x.jpg 2x">
-
-          <img src="img/tradein/tradein-transfer-mobile.jpg" srcset="img/tradein/tradein-transfer-mobile@2x.jpg 2x"
-            alt="Клиент сдает свою машину" class="tradein__img" width="375px" height="240px">
+            <source media="(min-width: 828px)"
+              srcset="img/tradein/tradein-transfer.jpg 1x, img/tradein/tradein-transfer@2x.jpg 2x">
+            <img src="img/tradein/tradein-transfer-mobile.jpg" srcset="img/tradein/tradein-transfer-mobile@2x.jpg 2x"
+              alt="Клиент сдает свою машину" class="tradein__img" width="375px" height="240px">
           </picture>
+        </div>
 
+        <div class="tradein__offer">
+          <h2 class="tradein-h2 text-title">Выгодный Trade in
+            вместе со Škoda</h2>
+          <p class="tradein__slogan">Обменяй свой старый автомобиль
+            на новую Škoda и получи скидку до 100 000 руб</p>
+
+          <form class="form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="form__input-name form__input" type="text" name="name" placeholder="ФИО">
+            <input class="form__input-tel form__input" type="tel" name="tel" placeholder="+7(___)___-__-__">
+            <div class="form__wrapper-agree">
+              <input class="form__checkbox-agree" type="checkbox" name="tradein-agree" id="tradein-agree">
+              <label class="form__label-agree" for="tradein-agree">Согласен с условиями обработки персональных
+                данных</label>
+            </div>
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <p class="form__notes notes">Подробные условия обмена вы можете уточнить по телефону 8 (800)
+              000-00-00
+            </p>
+          </form>
         </div>
 
         <!-- srcset="img/tradein/tradein-transfer-mobile@2x.jpg 2x" -->
@@ -530,21 +522,29 @@
     </section>
   </main>
   <!-- Футер -->
-  <!-- <footer class="footer">
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js
-/?um=constructor%3A337364f07c48cea14c8054c1fc3be330f7c5575da9af8d539c01134cfab8f600&amp;
-width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script> -->
+  <footer class="footer">
+    <iframe class="footer__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d667.1389778859503!2d37.58522182658565!3d55.77623483353253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a2252cd7f05%3A0x7729d99d70905e3c!2zMS3RjyDQotCy0LXRgNGB0LrQsNGPLdCv0LzRgdC60LDRjyDRg9C7LiwgMTIzLCDQnNC-0YHQutCy0LAsIDEyNTA0Nw!5e0!3m2!1sru!2sru!4v1658806553049!5m2!1sru!2sru"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-  <!-- <div class="footer__container contacts">
-      <a href="" class="contacts__logo">
-        <img src="img/logo/logo.png" alt="Логотип компании Шкода" class="contacts__logo-img" width="109" height="34h">
+    <div class="footer__info">
+      <a href="" class="logo">
+        <img src="img/logo/logo.png" alt="Логотип компании Шкода" class="logo-img" width="146" height="46">
       </a>
-      <p class="contacts__address">г. Москва ул.Тверская-Ямская, д. 123</p>
-      <p class="contacts__regime">Ежедневно с 9:00 до 21:00</p>
-      <a href="tel: +78000000000" class="contacts__phone">8(800)000-00-00</a>
-      <a href="#" class="contacts__button button"><span class="contacts__text-button">Обратный звонок</span></a>
-    </div>
-  </footer> -->
+
+      <div class="footer__wrapper-address-regime">
+        <p class="address">г. Москва ул.Тверская-Ямская, д. 123</p>
+        <p class="regime">Ежедневно с 9:00 до 21:00</p>
+      </div>
+
+
+      <div class="footer__wrapper-phone">
+        <a href="tel: +78000000000" class="footer__phone phone">8(800)000-00-00</a>
+        <a href="#" class="footer__button button"><span class="">Обратный звонок</span></a>
+      </div>
+
+  </footer>
 
 
 
