@@ -440,37 +440,48 @@
     <!-- Кредит -->
     <section class="credit">
       <div class="credit__container container">
-        <div class="credit__wrapper-img"><img src="img/credit/credit-meet-mobile.jpg" alt="Клиент оформляет кредит"
-            class="credit__img" width="375" height="240"></div>
 
-        <div class="credit__wrapper-conditions">
-          <h2 class="credit__h2 text-title">Шкода в кредит по условиям 2022 года</h2>
-          <ul class="credit__list">
-            <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
-                <use xlink:href="img/sprite.svg#arrow-credit"></use>
-              </svg>Первоначальный взнос от 10%</li>
-            <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
-                <use xlink:href="img/sprite.svg#arrow-credit"></use>
-              </svg>Одобрение 98%</li>
-            <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
-                <use xlink:href="img/sprite.svg#arrow-credit"></use>
-              </svg>Страховка от потери работы</li>
-          </ul>
-          <form class="credit__form form" action="https://echo.htmlacademy.ru" method="get">
 
-            <input class="form__input-name form__input" type="text" name="name" placeholder="ФИО">
-            <input class="form__input-tel form__input" type="tel" name="tel" placeholder="+7(___)___-__-__">
-            <div class="form__wrapper-agree">
-              <input class="form__checkbox-agree" type="checkbox" name="credit-agree" id="credit-agree">
-              <label class="form__label-agree" for="credit-agree">Согласен с условиями обработки персональных
-                данных</label>
-            </div>
-            <button class="form__button button" type="submit">Отправить заявку</button>
-            <p class="form__notes notes">Подробные условия кредитования вы можете уточнить по телефону 8 (800)
-              000-00-00
-            </p>
-          </form>
+        <div class="credit__wrapper-inner">
+          <div class="credit__wrapper-img">
+
+            <!-- <source media="(min-width: 828px)" srcset="img/available/fon.jpg 1x, img/available/fon@2x.jpg 2x">
+              <img src="img/available/fon-mobile.jpg" srcset="img/available/fon-mobile@2x.jpg 2x"
+                alt="Группа автомобилей Шкода на льду" width="375px" heigth="240px" class="available__img"> -->
+            <img src="img/credit/credit-meet-mobile.jpg" alt="Клиент оформляет кредит" class="credit__img" width="375"
+              height="240">
+
+          </div>
+
+          <div class="credit__wrapper-conditions">
+            <h2 class="credit__h2 text-title">Шкода в кредит по условиям 2022 года</h2>
+            <ul class="credit__list">
+              <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
+                  <use xlink:href="img/sprite.svg#arrow-credit"></use>
+                </svg>Первоначальный взнос от 10%</li>
+              <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
+                  <use xlink:href="img/sprite.svg#arrow-credit"></use>
+                </svg>Одобрение 98%</li>
+              <li class="credit__item"><svg class="credit__icons-arrow-credit" width="6" height="6">
+                  <use xlink:href="img/sprite.svg#arrow-credit"></use>
+                </svg>Страховка от потери работы</li>
+            </ul>
+            <form class="credit__form form" action="https://echo.htmlacademy.ru" method="get">
+              <input class="form__input-name form__input" type="text" name="name" placeholder="ФИО">
+              <input class="form__input-tel form__input" type="tel" name="tel" placeholder="+7(___)___-__-__">
+              <div class="form__wrapper-agree">
+                <input class="form__checkbox-agree" type="checkbox" name="credit-agree" id="credit-agree">
+                <label class="form__label-agree" for="credit-agree">Согласен с условиями обработки персональных
+                  данных</label>
+              </div>
+              <button class="form__button button" type="submit">Отправить заявку</button>
+              <p class="form__notes notes">Подробные условия кредитования вы можете уточнить по телефону 8 (800)
+                000-00-00
+              </p>
+            </form>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -523,26 +534,42 @@
   </main>
   <!-- Футер -->
   <footer class="footer">
-    <iframe class="footer__map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d667.1389778859503!2d37.58522182658565!3d55.77623483353253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a2252cd7f05%3A0x7729d99d70905e3c!2zMS3RjyDQotCy0LXRgNGB0LrQsNGPLdCv0LzRgdC60LDRjyDRg9C7LiwgMTIzLCDQnNC-0YHQutCy0LAsIDEyNTA0Nw!5e0!3m2!1sru!2sru!4v1658806553049!5m2!1sru!2sru"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="footer__container-map">
 
-    <div class="footer__info">
-      <a href="" class="logo">
-        <img src="img/logo/logo.png" alt="Логотип компании Шкода" class="logo-img" width="146" height="46">
-      </a>
+      <div class="footer__container-map-inner container">
+        <iframe class="footer__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d667.1389778859503!2d37.58522182658565!3d55.77623483353253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a2252cd7f05%3A0x7729d99d70905e3c!2zMS3RjyDQotCy0LXRgNGB0LrQsNGPLdCv0LzRgdC60LDRjyDRg9C7LiwgMTIzLCDQnNC-0YHQutCy0LAsIDEyNTA0Nw!5e0!3m2!1sru!2sru!4v1658806553049!5m2!1sru!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-      <div class="footer__wrapper-address-regime">
-        <p class="address">г. Москва ул.Тверская-Ямская, д. 123</p>
-        <p class="regime">Ежедневно с 9:00 до 21:00</p>
+        <div class="footer__info">
+          <a href="" class="logo">
+            <img src="img/logo/logo.png" alt="Логотип компании Шкода" class="logo-img" width="146" height="46">
+          </a>
+
+          <div class="footer__wrapper-address-regime">
+            <p class="address">г. Москва ул.Тверская-Ямская, д. 123</p>
+            <p class="regime">Ежедневно с 9:00 до 21:00</p>
+          </div>
+          <div class="footer__wrapper-phone">
+            <a href="tel: +78000000000" class="footer__phone phone">8(800)000-00-00</a>
+            <a href="#" class="footer__button button"><span class="">Обратный звонок</span></a>
+          </div>
+        </div>
       </div>
+    </div>
 
 
-      <div class="footer__wrapper-phone">
-        <a href="tel: +78000000000" class="footer__phone phone">8(800)000-00-00</a>
-        <a href="#" class="footer__button button"><span class="">Обратный звонок</span></a>
-      </div>
+    <p class="footer__text container">
+      * Подробности уточняйте в отделе продаж. Обращаем Ваше внимание на то, что вся представленная на сайте
+      информация, касающаяся комплектаций, технических характеристик, цветовых сочетаний, а также стоимости
+      автомобилей и сервисного обслуживания носит информационный характер и ни при каких условиях не является
+      публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для
+      получения подробной информации, пожалуйста, обращайтесь в наш салон.
+    </p>
+
+
+
 
   </footer>
 

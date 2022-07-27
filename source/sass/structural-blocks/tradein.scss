@@ -1,79 +1,87 @@
 .tradein {
-  // display: none;
+  display: none;
 
   &__container {
     display: grid;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-    column-gap: 48px;
+    // column-gap: 48px;
+    row-gap: 24px;
 
     @media (min-width:($min-width-tablet+60px)) {
       grid-template-columns: 1fr 40.94%;
     }
-  }
 
-  &__offer {
-    @media (min-width:($min-width-tablet+60px)) {
+    @media (min-width:($min-width-desktop+90px)) {
+      column-gap: 48px;
+    }
+
+    &__offer {
+
       display: grid;
-      order: -1;
-      padding-left: 54px;
-      padding: 16px 0 16px 44px;
-      row-gap: 8px;
-      width: auto;
+      row-gap: 24px;
+
+      @media (min-width:($min-width-tablet+60px)) {
+        display: grid;
+        order: -1;
+        padding-left: 54px;
+        padding: 16px 0 16px 44px;
+        row-gap: 8px;
+        width: auto;
+      }
+
+      @media (min-width: ($min-width-desktop+90px)) {
+        width: auto;
+      }
     }
 
-    @media (min-width: ($min-width-desktop+90px)) {
-      width: auto;
-    }
-  }
+    .tradein-h2 {
+      font-size: 20px;
+      margin: 0;
+      max-width: 260px;
 
-  .tradein-h2 {
-    font-size: 20px;
-    margin: 0;
-    width: 260px;
-
-    @media (min-width:($min-width-tablet+60px)) {
-      font-size: 16px;
-      width: 260px;
-    }
-  }
-
-  .tradein__slogan {
-    // font-size: 14px;
-    width: 500px;
-    margin: 0;
-
-    @media (min-width:($min-width-tablet+60px)) {
-      width: 360px;
+      @media (min-width:($min-width-tablet+60px)) {
+        font-size: 16px;
+        width: 260px;
+      }
     }
 
-  }
+    .tradein__slogan {
+      // font-size: 14px;
+      max-width: 500px;
+      margin: 0;
 
-  &__form {}
+      @media (min-width:($min-width-tablet+60px)) {
+        max-width: 360px;
+      }
 
-  &__wrapper-check {}
-
-  &__notes {}
-
-  &__wrapper-img {
-    // order: -1;
-    // width: 200px;
-    // margin: 0 -16px;
-
-  }
-
-  &__img {
-    // display: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    @media (min-width:($min-width-tablet+60px)) {
-      object-fit: contain;
     }
 
+    &__form {}
+
+    &__wrapper-check {}
+
+    &__notes {}
+
+    &__wrapper-img {
+      // order: -1;
+      // width: 200px;
+      // margin: 0 -16px;
+
+    }
+
+    &__img {
+      // display: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @media (min-width:($min-width-tablet+60px)) {
+        object-fit: contain;
+      }
+
+
+    }
 
   }
-
-
 }
