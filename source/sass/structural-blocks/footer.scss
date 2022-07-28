@@ -3,6 +3,7 @@
 
   display: grid;
   row-gap: 32px;
+  // display: none;
 
   @media (min-width:($min-width-tablet+60px)) {
     padding-top: 0px;

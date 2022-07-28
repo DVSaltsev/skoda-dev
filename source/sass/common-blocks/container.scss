@@ -3,43 +3,27 @@
   box-sizing: border-box;
 
   @media (min-width: ($min-width-tablet+32px)) {
-    // padding: 0px 30px;
     max-width: $min-width-tablet;
     margin: 0 auto;
-
   }
 
   @media (min-width: ($min-width-tablet+60px)) {
-    // padding: 0px 30px;
-    // max-width: $min-width-tablet;
     max-width: none;
     padding: 0px 30px;
-
   }
 
   @media (min-width: ($min-width-desktop+60px)) {
-
-    // padding: 0px 50px;
-    // margin: 0 45px;
     max-width: $min-width-desktop;
     margin: 0 auto;
-
   }
 
   @media (min-width: ($min-width-desktop+90px)) {
-
-    // padding: 0px 50px;
     max-width: none;
     padding: 0 45px;
-
   }
 
   @media (min-width: ($max-width-desktop+90px)) {
-
-    // padding: 0px 0px;
-    // margin: 0 0px;
     max-width: $max-width-desktop+90px;
     margin: 0 auto;
-
   }
 }
