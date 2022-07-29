@@ -1,12 +1,11 @@
 .page {
-
   font-family: $name-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
   color: #000000;
-  min-width: $min-width-mobile+32px;
+  min-width: $min-width-mobile;
 }
 
 .page__body {

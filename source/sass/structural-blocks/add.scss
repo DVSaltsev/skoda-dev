@@ -1,4 +1,4 @@
-.servis-add {
+.add {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: #FAFAFA;
@@ -6,11 +6,11 @@
   // display: none;
 }
 
-.servis-add__h2 {}
+.add__h2 {}
 
 .visually-hidden {}
 
-.servis-add__list {
+.add__list {
   // margin: 0px;
   display: flex;
   flex-wrap: wrap;
@@ -21,7 +21,7 @@
 
 .container {}
 
-.servis-add__item {
+.add__item {
 
   flex-grow: 1;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
@@ -29,11 +29,11 @@
   width: 30%;
 }
 
-.servis-add__img {
+.add__img {
   display: none;
 }
 
-.servis-add__wrapper-text {
+.add__wrapper-text {
   min-height: 88px;
   display: flex;
   flex-direction: column;
@@ -42,21 +42,21 @@
   box-sizing: border-box;
 }
 
-.servis-add__h3 {
+.add__h3 {
   font-size: 16px;
   line-height: 120%;
   margin: 0;
 }
 
-.servis-add__h3-large {
+.add__h3-large {
   display: none;
 }
 
-.servis-add__text {
+.add__text {
   display: none;
 }
 
-.servis-add__link {
+.add__link {
   text-decoration: none;
   font-size: 10px;
   line-height: 120%;
@@ -65,18 +65,18 @@
   gap: 5%;
 }
 
-.servis-add__mark {
+.add__mark {
   fill: transparent;
   stroke: #DADADA;
 }
 
-@media (min-width: ($min-width-tablet + 60px)) {
-  .servis-add {
+@media (min-width: ($min-width-tablet)) {
+  .add {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
-  .servis-add__list {
+  .add__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     // column-gap: calc(100/1280*100%);
@@ -84,7 +84,7 @@
     row-gap: 2%;
   }
 
-  .servis-add__item {
+  .add__item {
     // width: 100%;
     flex-grow: 0;
     padding: 0;
@@ -92,13 +92,13 @@
 
   }
 
-  .servis-add__img {
+  .add__img {
     display: block;
     width: 100%;
     height: auto;
   }
 
-  .servis-add__wrapper-text {
+  .add__wrapper-text {
     min-height: (88px+198px)/2;
     display: flex;
     flex-direction: column;
@@ -111,42 +111,42 @@
     // row-gap: 0;
   }
 
-  .servis-add__h3 {
+  .add__h3 {
     font-size: 18px;
   }
 
-  .servis-add__text {
+  .add__text {
     display: block;
     margin: 0;
     font-size: 12px;
     font-weight: 300;
   }
 
-  .servis-add__link {
+  .add__link {
     font-size: 12px;
     line-height: 120%;
     color: #000000;
   }
 
-  .servis-add__h3-large {
+  .add__h3-large {
     display: block;
   }
 
-  .servis-add__h3-small {
+  .add__h3-small {
     display: none;
   }
 }
 
-@media (min-width: ($min-width-desktop + 90px)) {
-  .servis-add__h3 {
+@media (min-width: ($min-width-desktop)) {
+  .add__h3 {
     font-size: 24px;
   }
 
-  .servis-add__text {
+  .add__text {
     font-size: 16px;
   }
 
-  .servis-add__link {
+  .add__link {
     font-size: 16px;
 
   }
