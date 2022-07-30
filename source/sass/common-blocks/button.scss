@@ -1,17 +1,25 @@
 .button {
-  display: inline-flex;
+  display: flex;
   box-sizing: border-box;
   text-decoration: none;
   padding: 4px 10px;
-  // width: 194px;
-  // min-height: 52px;
-  background: #4DA82F;
+  background-color: $green-100;
   border-radius: 50px;
   font-size: 16px;
   line-height: 140%;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #FFFFFF;
+  color: $white;
   cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+
+}
+
+.button:hover {
+  background-color: $green-150;
+}
+
+.button:active {
+  background-color: $black;
 }

@@ -3,7 +3,6 @@
   padding-bottom: 16px;
 
   &__container {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,14 +11,8 @@
     column-gap: 16px;
   }
 
-  &__logo {
-    // margin-right: 56px;
-    // flex: 1 1 auto;
-  }
-
   &__address-regime-wrapper {
     display: none;
-
     @media (min-width: ($min-width-tablet)) {
       display: flex;
       align-items: center;
@@ -42,17 +35,13 @@
   }
 
   &__phone {
-
-    // margin-right: 16px;
     @media (min-width: ($min-width-tablet)) {
       font-size: 16px;
     }
-
     @media (min-width: ($min-width-desktop)) {
       font-size: 24px;
       line-height: 140%;
     }
-
   }
 
   &__button {
@@ -79,7 +68,7 @@
     @media (min-width: ($min-width-desktop)) {
       font-size: 16px;
       line-height: 140%;
-      color: #FFFFFF;
+      color: $white;
       display: inline;
     }
   }

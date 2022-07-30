@@ -13,26 +13,19 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  background-color: #6F8BA6;
-
 }
 
 .available__container {
   padding-top: 16px;
   padding-bottom: 134px;
-  // //  padding-right: 24px;
   position: relative;
 }
 
 .available__info {
-
   width: 320px;
-
-  background: rgba(0, 0, 0, 0.4);
+  background: $gray-100;
   border-radius: 16px;
-
   box-sizing: border-box;
-
   display: grid;
   padding: 16px;
   row-gap: 8px;
@@ -42,26 +35,22 @@
 .available__h2 {
   font-size: 16px;
   line-height: 140%;
-  color: #FFFFFF;
+  color: $white;
   margin: 0;
   // margin-bottom: 10px;
 }
 
-.text-title {}
-
 .available__button {
   width: 157px;
   min-height: 28px;
-  background: #4DA82F;
+  background: $green-100;
   border-radius: 64px;
   padding: 4px 10px;
   font-size: 10px;
   line-height: 120%;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $white;
 }
-
-.button {}
 
 .available__text {
   display: none;
@@ -88,7 +77,7 @@
 
   .available__text {
     display: block;
-    color: #FFFFFF;
+    color: $white;
     margin: 0;
   }
 }
@@ -101,9 +90,6 @@
   .available__container {
     padding-top: 148px;
     padding-bottom: 62px;
-    // padding-right: 330px;
-
-
   }
 
   .available__info {

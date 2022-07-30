@@ -1,12 +1,11 @@
 .phone {
   font-size: 14px;
   line-height: 140%;
-  // margin-left: 40px;
   text-decoration: none;
-  color: #000000;
+  color: $black;
   cursor: pointer;
-  // display: none;
+}
 
-  
-
+.phone:hover {
+  text-shadow: 1px 1px 2px $brown-100;
 }

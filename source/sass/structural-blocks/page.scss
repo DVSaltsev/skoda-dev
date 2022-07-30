@@ -4,7 +4,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
-  color: #000000;
+  color: $black;
   min-width: $min-width-mobile;
 }
 
@@ -14,11 +14,5 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   min-height: 100vh;
-  background-color: #ffffff;
-}
-
-.test {
-  width: 200px;
-  height: 50px;
-  background-color: red;
+  background-color: $white;
 }

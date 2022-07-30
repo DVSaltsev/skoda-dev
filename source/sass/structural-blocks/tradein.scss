@@ -1,87 +1,112 @@
 .tradein {
-  display: none;
+  padding: 32px 0px;
 
   &__container {
+    box-shadow: 0px 0px 16px $gray-90;
+
+    @media (min-width:($min-width-desktop)) {
+      box-shadow: none;
+    }
+  }
+
+  &__wrapper-inner {
     display: grid;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-    // column-gap: 48px;
     row-gap: 24px;
 
-    @media (min-width:($min-width-tablet+60px)) {
-      grid-template-columns: 1fr 40.94%;
+    @media (min-width:($min-width-tablet)) {
+      grid-template-columns: 1fr 524/1280*100%;
+      column-gap: 86px;
+    }
+
+    @media (min-width:($min-width-desktop)) {
+      column-gap: 106px;
+      row-gap: 0px;
+    }
+
+  }
+
+  &__wrapper-img {
+    margin-left: -16px;
+    margin-right: -16px;
+
+    @media (min-width:($min-width-tablet)) {
+      margin-left: -30px;
+      margin-right: 0px;
     }
 
     @media (min-width:($min-width-desktop+90px)) {
-      column-gap: 48px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    @media (min-width:($min-width-desktop+90px)) {}
+  }
+
+  &__wrapper-conditions {
+    display: grid;
+    row-gap: 24px;
+
+    @media (min-width:($min-width-tablet)) {
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
 
-    &__offer {
-
-      display: grid;
-      row-gap: 24px;
-
-      @media (min-width:($min-width-tablet+60px)) {
-        display: grid;
-        order: -1;
-        padding-left: 54px;
-        padding: 16px 0 16px 44px;
-        row-gap: 8px;
-        width: auto;
-      }
-
-      @media (min-width: ($min-width-desktop+90px)) {
-        width: auto;
-      }
+    @media (min-width:($min-width-desktop)) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      row-gap: 32px;
+      padding-left: 70px;
     }
+  }
 
-    .tradein-h2 {
-      font-size: 20px;
-      margin: 0;
-      max-width: 260px;
+  &__h2 {
+    margin: 0;
 
-      @media (min-width:($min-width-tablet+60px)) {
-        font-size: 16px;
-        width: 260px;
-      }
+    @media (min-width:($min-width-desktop)) {
+      max-width: 560px;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
     }
+  }
 
-    .tradein__slogan {
-      // font-size: 14px;
-      max-width: 500px;
-      margin: 0;
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 120%;
+    display: grid;
+    row-gap: 6px;
 
-      @media (min-width:($min-width-tablet+60px)) {
-        max-width: 360px;
-      }
-
+    @media (min-width:($min-width-desktop)) {
+      font-size: 16px;
+      line-height: 140%;
     }
+  }
 
-    &__form {}
+  &__item {
+    display: flex;
+    align-items: center;
+  }
 
-    &__wrapper-check {}
+  &__text {
+    line-height: 120%;
 
-    &__notes {}
-
-    &__wrapper-img {
-      // order: -1;
-      // width: 200px;
-      // margin: 0 -16px;
-
+    @media (min-width:($min-width-desktop)) {
+      font-size: 16px;
+      line-height: 140%;
+      width: 360px;
     }
+  }
 
-    &__img {
-      // display: none;
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-
-      @media (min-width:($min-width-tablet+60px)) {
-        object-fit: contain;
-      }
-
-
-    }
-
+  &__icons-arrow-tradein {
+    margin-right: 8px;
   }
 }

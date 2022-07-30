@@ -1,5 +1,4 @@
 .models {
-  //  display: none;
   margin-top: 16px;
   margin-bottom: 32px;
 }
@@ -18,8 +17,6 @@
   display: flex;
   width: 100%;
   min-height: 32px;
-  // gap: 32px;
-  // overflow: hidden;
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 5%;
@@ -27,7 +24,6 @@
   padding-bottom: 16px;
 }
 
-.models__nav-item {}
 
 .models__nav-link {
   text-decoration: none;
@@ -52,19 +48,15 @@
   padding-bottom: 40px;
 
   &:nth-child(even) {
-    background-color: #FAFAFA;
+    background-color: $gray-10;
   }
-
 }
-
-.models__wrapper {}
 
 .models__name {
   text-align: center;
   margin: 0;
 }
 
-.models__name-above {}
 
 .models__img {
   width: 100%;
@@ -76,10 +68,6 @@
 .models__name-below {
   display: none;
 }
-
-.models__name-info {}
-
-.models__name {}
 
 .models__info {
   margin: 0;
@@ -105,10 +93,8 @@
 }
 
 .models__text-value {
-  color: #4DA82F;
+  color: $green-100;
 }
-
-.models__actions {}
 
 .models__wrapper-price-button {
   min-height: 30px;
@@ -131,7 +117,7 @@
   min-height: 24px;
   font-size: 12px;
   height: auto;
-  background-color: #EF0303;
+  background-color: $red;
   align-self: start;
 }
 
@@ -152,7 +138,7 @@
   width: 320px;
   margin-bottom: 16px;
   display: flex;
-  background-color: #000000;
+  background-color: $black;
 }
 
 .models__tradein-button {
@@ -160,8 +146,12 @@
   margin-bottom: 16px;
   display: flex;
   background-color: white;
-  border: 1px solid #4DA82F;
-  color: #000000;
+  border: 1px solid $green-100;
+  color: $black;
+}
+
+.models__tradein-button:active {
+  color: $white;
 }
 
 @media (min-width: ($min-width-tablet)) {
@@ -252,7 +242,7 @@
 
   .models__item {
     min-height: 348px;
-    column-gap: 36px;
+    column-gap: 62px;
   }
 
   .models__name {
@@ -268,37 +258,31 @@
     row-gap: 24px;
     font-size: 16px;
   }
-
-  .models__actions {}
-
-  .models__price {}
 }
 
-@media (min-width: ($max-width-desktop)) {
-  .models__list {
-    row-gap: 64px;
-  }
+// @media (min-width: ($min-width-desktop)) {
+//   .models__list {
+//     row-gap: 64px;
+//   }
 
-  .models__name {}
+//   .models__name-info {
+//     row-gap: 42px;
+//   }
 
-  .models__name-info {
-    row-gap: 42px;
-  }
+//   .models__actions {
+//     row-gap: 46px;
+//   }
 
-  .models__actions {
-    row-gap: 46px;
-  }
+//   .models__price {
+//     font-size: 32px;
+//   }
 
-  .models__price {
-    font-size: 32px;
-  }
+//   .models__wrapper-button {
+//     row-gap: 28px;
+//   }
 
-  .models__wrapper-button {
-    row-gap: 28px;
-  }
-
-  .models__button {
-    font-size: 16px;
-    width: 320px;
-  }
-}
+//   .models__button {
+//     font-size: 16px;
+//     width: 320px;
+//   }
+// }

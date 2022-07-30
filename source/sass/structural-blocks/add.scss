@@ -1,14 +1,10 @@
 .add {
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: #FAFAFA;
+  background-color: $gray-10;
   // min-height: 222px;
   // display: none;
 }
-
-.add__h2 {}
-
-.visually-hidden {}
 
 .add__list {
   // margin: 0px;
@@ -18,8 +14,6 @@
   row-gap: 16px;
   list-style: none;
 }
-
-.container {}
 
 .add__item {
 
@@ -60,14 +54,14 @@
   text-decoration: none;
   font-size: 10px;
   line-height: 120%;
-  color: #4DA82F;
+  color: $green-100;
   display: flex;
   gap: 5%;
 }
 
 .add__mark {
   fill: transparent;
-  stroke: #DADADA;
+  stroke: $gray-50;
 }
 
 @media (min-width: ($min-width-tablet)) {
@@ -79,7 +73,6 @@
   .add__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    // column-gap: calc(100/1280*100%);
     column-gap: 2%;
     row-gap: 2%;
   }
@@ -89,13 +82,11 @@
     flex-grow: 0;
     padding: 0;
     width: 100%;
-
   }
 
   .add__img {
-    display: block;
-    width: 100%;
-    height: auto;
+
+    @include reset-img;
   }
 
   .add__wrapper-text {
@@ -103,12 +94,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // row-gap: 8px;
     box-sizing: border-box;
     padding: 5% 5%;
-    // min-height: 198px;
-    // justify-content: space-between;
-    // row-gap: 0;
   }
 
   .add__h3 {
@@ -125,7 +112,7 @@
   .add__link {
     font-size: 12px;
     line-height: 120%;
-    color: #000000;
+    color: $black;
   }
 
   .add__h3-large {

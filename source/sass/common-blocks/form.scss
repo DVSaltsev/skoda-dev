@@ -16,7 +16,7 @@
 
   &__input {
     min-height: 52px;
-    border: 1px solid #DADADA;
+    border: 1px solid $gray-50;
     border-radius: 32px;
     padding-left: 24px;
 
@@ -68,16 +68,15 @@
     left: 7px;
     width: 10px;
     height: 10px;
-    background-color: #4DA82F;
+    background-color: $green-100;
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 50%;
     z-index: 2;
-
   }
 
   &__checkbox-agree:focus+&__label-agree::before {
-    border: 1px solid #b8860b;
+    border: 1px solid $brown-50;
   }
 
   &__label-agree::before {
@@ -88,8 +87,7 @@
     left: 2px;
     width: 18px;
     height: 18px;
-    // background-color: black;
-    background-repeat: no-repeat;
+        background-repeat: no-repeat;
     background-position: center center;
     border-radius: 50%;
     border: 1px solid black;
@@ -101,11 +99,11 @@
     min-height: 52px;
     border: none;
     outline: none;
-    // order: 1;
+
 
     @media (min-width:($min-width-tablet+60px)) {
       min-height: 36px;
-      // order: 0;
+
     }
 
     @media (min-width:($min-width-desktop+90px)) {
@@ -115,8 +113,6 @@
       max-width: 194px;
       box-sizing: border-box;
       flex: 1 1 194px;
-
-
     }
   }
 
@@ -124,11 +120,10 @@
     margin: 0;
     font-size: 12px;
     line-height: 140%;
-    color: #DADADA;
+    color: $gray-50;
 
     @media (min-width:($min-width-desktop+90px)) {
       order: 2;
     }
   }
-
 }
